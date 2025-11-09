@@ -1,0 +1,80 @@
+/* Caja blanca centrada, ancha y profesional */
+.blog-box {
+  width: 550px;
+  max-width: 90vw;
+  height: auto;
+  padding: 50px;
+  /* margin: 0 20px; */
+  margin-bottom: 10px !important;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 35px rgba(148, 146, 245, 0.15);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-img {
+  width: 100px;
+  height: 200px;
+  object-fit: cover;
+  /* border-radius: 50%; */
+  margin-bottom: 20px;
+  /* border: 3px solid #6c63ff; */
+}
+
+.blog-box .icon {
+  font-size: 2.2rem;
+  color: #6c63ff;
+  margin: 15px 0;
+}
+
+.blog-box .title-box {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0;
+}
+
+.blog-box p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+span.blog-box-p {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/* Owl Carousel: solo puntitos, sin flechas */
+.testimonials-carousel .owl-nav {
+  display: none !important;
+}
+
+.testimonials-carousel .owl-dots {
+  margin-top: 10px !important;   /* Antes era 20px, ahora 10px → más cerca */
+  position: relative;
+  bottom: 10px;                  /* Sube los puntitos un poco más */
+}
+
+.testimonials-carousel .owl-dot span {
+  background: #ccc;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.testimonials-carousel .owl-dot.active span {
+  background: #6c63ff;
+}
+
+/* Centrado perfecto del slide */
+.owl-item, .testimonial-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
