@@ -332,6 +332,14 @@ width: 11px;
   border: 0;
 }
 
+.title-slide-home{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
 
 /*============================================================
     Services
