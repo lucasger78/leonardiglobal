@@ -1,0 +1,233 @@
+.auto-slider {
+    overflow: hidden;
+    width: 100%;
+    padding: 30px 0;
+    background: #f8f8f8;
+}
+
+.slider-track {
+    display: flex;
+    width: calc(250px * 8); /* 250px por imagen × 8 imágenes */
+    animation: scroll 25s linear infinite;
+}
+
+.slide {
+    min-width: 250px;
+    padding: 0 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.slide:hover img {
+    transform: scale(1.05);
+}
+
+/* Movimiento continuo */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 4)); }
+}
+
+/* Pausa al hacer hover */
+.auto-slider:hover .slider-track {
+    animation-play-state: paused;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .slider-track { width: calc(200px * 8); }
+    .slide { min-width: 200px; }
+    @keyframes scroll {
+        100% { transform: translateX(calc(-200px * 4)); }
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-track { width: calc(160px * 8); }
+    .slide { min-width: 160px; }
+    @keyframes scroll {
+        100% { transform: translateX(calc(-160px * 4)); }
+    }
+}
+
+.slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide::after {
+    /* content: "Leer Noticia"; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    transform: translateY(20px);
+    background: rgba(0,170,255,0.9);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.slide:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.slide::before {
+    content: attr(data-title) "\A""\A" attr(data-content);
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: rgba(0,170,255,0.9);    
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    line-height: 1.4;
+    white-space: pre; /* Permite el salto de línea con \A */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    transform: translateY(20px);
+    pointer-events: none;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.slide:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Opcional: oscurecer la imagen al hover */
+.slide:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+    transition: all 0.4s ease;
+}
+
+.btn-leer-mas {
+    display: inline-block;
+    background: #00aaff;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: auto; /* lo empuja hacia abajo */
+    align-self: center;
+}
+
+.btn-leer-mas:hover {
+    background: #00aaff;
+    transform: scale(1.05);
+}
+
+/* Efecto hover en la imagen */
+.slide:hover img {
+    transform: scale(1.08);
+    filter: brightness(0.7);
+}
+
+.slide {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.4s ease;
+}
+
+/* Overlay que contiene título + botón */
+.slide-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    background: rgba(0, 170, 255, 0.95);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: all 0.4s ease;
+    border-radius: 0 0 16px 16px;
+    z-index: 2;
+}
+
+.slide:hover .slide-overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.slide-title {
+    /* margin: 0; */
+    margin-top: 10px !important;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.3;
+}
+
+/* Botón que aparece junto con el overlay */
+.btn-leer-mas {
+    background: #00aaff;
+    color: white;
+    font-weight:500;
+    font-size: 14px;
+    padding: 8px 22px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-leer-mas:hover {
+    background: #00aaff;
+    transform: scale(1.08);
+}
+
+/* Efecto en la imagen al hover */
+.slide:hover img {
+    transform: scale(1.08);
+    filter: brightness(0.7);
+}
+
+
+
+
+
+
+
+
+
