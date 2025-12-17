@@ -193,7 +193,7 @@ width: 11px;
 
 .navigation .navbar-nav > li > a {
   color: #fff;
-  font-size: 13px;
+   -size: 13px;
   font-weight: 600;
   padding: 38px 25px;
   text-transform: uppercase;
