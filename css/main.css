@@ -612,12 +612,12 @@ figcaption.mask span {
 }
 
 .counter-section {
-  background-color: #096c89;
+  background-color: #0584ce;
   padding: 25px 0 40px;
 }
 
 #count2 {
-  background-color: #096c89;
+  background-color: #0584ce;
   padding-bottom: 90px;
 }
 
@@ -735,7 +735,7 @@ width: 11px;
 }
 
 .section-title-about2 h2 {
-  color: #096c89;
+  color: #0584ce;
   font-size: 30px;
   position: relative;
   margin-bottom: 25px;
@@ -744,7 +744,7 @@ width: 11px;
 }
 
 .section-title-about2 h2:before {
-  border-bottom: 1px solid #096c89;
+  border-bottom: 1px solid #0584ce;
   bottom: 0;
   content: "";
   left: 50%;
@@ -755,7 +755,7 @@ width: 11px;
 
 .section-title-about2 h2:after {
 background: none repeat scroll 0 0 #fff;
-border: 1px solid #096c89;
+border: 1px solid #0584ce;
 border-radius: 25px;
 bottom: -6px;
 content: "";

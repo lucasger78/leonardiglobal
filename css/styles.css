@@ -1,0 +1,147 @@
+/* HOME */
+
+.latin-p {
+    font-style: italic !important;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.latin-carousel {
+  position: relative;
+  height: 100px; /* ajusta según tu diseño */
+  overflow: hidden;
+}
+
+.latin-p {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+  font-style: italic;
+}
+
+.latin-p.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ABOUT */
+.section-title h2 {
+     font-size: 1.5em;
+   /* font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center; */
+}
+
+.text-about-rectangle {
+    /* background-color: #ffffff; */
+    /* display: inline-block; */
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+.border-about-rectangle {
+  border: 1px dotted aqua;
+  box-shadow: 5px 5px 15px rgba(0, 255, 255, 0.3);
+  width: 200% !important;
+  margin-left: -200px !important; 
+  /* display: inline-block; 
+   padding: 10px 20px;
+    
+   border-radius: 5px;
+   color: #ffffff;*/
+}
+
+.p-about-rectangle {
+  font-size: 1.7rem !important; /* usa unidades relativas */
+  width: 100%; /* ocupa el ancho del contenedor */
+  max-width: 600px; /* opcional: limita el ancho en pantallas grandes */
+  margin: 0 auto; /* centra el bloque */
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: #ffffff;
+  box-sizing: border-box; /* asegura que el padding no rompa el ancho */
+}
+
+/* Estilos generales */
+.section-title h2 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.text-about-rectangle {
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.border-about-rectangle {
+  border: 1px dotted aqua;
+  box-shadow: 5px 5px 15px rgba(0, 255, 255, 0.3);
+  width: 100%; /* ocupa todo el ancho disponible */
+  margin: 0 auto; /* centra el bloque */
+}
+
+/* .p-about-rectangle {
+  font-size: 1.2rem; 
+  width: 100%;  
+  padding: 10px 15px;
+  border-radius: 15px;
+  color: #ffffff;
+  box-sizing: border-box;
+  text-align: center; 
+} */
+.text-about-top {
+  font-size: 1.8rem !important;
+  padding-left: 50px !important;
+  padding-right: 20px !important;
+  display: block;
+}
+
+.tst-single {
+  border: 1px dotted rgb(51, 51, 51);
+  box-shadow: 5px 5px 15px rgba(51, 51, 51, 0.3);
+  padding: 20px;
+  transition: all 0.3s ease; /* suaviza el efecto */
+}
+
+.tst-single:hover {
+  transform: translateY(-6px); /* se mueve un poco hacia arriba */
+  box-shadow: inset 0 0 15px rgba(5, 132, 206, 0.4); /* sombra interior */
+  border: 1px dotted rgb(5, 132, 206);
+}
+
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 1.3em; /* reduce el tamaño en tablets */
+  }
+
+  .p-about-rectangle {
+    font-size: 1rem; /* más legible en móviles */
+    padding: 8px 12px;
+  }
+
+  .border-about-rectangle {
+    width: 100% !important; /* evita desbordes */
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title h2 {
+    font-size: 1.1em; /* aún más pequeño en celulares */
+  }
+
+  .p-about-rectangle {
+    font-size: 0.95rem;
+    padding: 6px 10px;
+  }
+}
