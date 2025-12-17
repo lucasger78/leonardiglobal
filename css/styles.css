@@ -106,14 +106,14 @@
 
 .tst-single {
   border: 1px dotted rgb(51, 51, 51);
-  box-shadow: 5px 5px 15px rgba(51, 51, 51, 0.3);
+  box-shadow: 5px 5px 5px rgba(51, 51, 51, 0.3);
   padding: 20px;
   transition: all 0.3s ease; /* suaviza el efecto */
 }
 
 .tst-single:hover {
   transform: translateY(-6px); /* se mueve un poco hacia arriba */
-  box-shadow: inset 0 0 15px rgba(5, 132, 206, 0.4); /* sombra interior */
+  box-shadow: inset 0 0 10px rgba(5, 132, 206, 0.4); /* sombra interior */
   border: 1px dotted rgb(5, 132, 206);
 }
 
