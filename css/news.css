@@ -229,6 +229,233 @@
 
 
 
+/* ============================================= */
+/* FLECHAS DE NAVEGACIÓN PARA EL CARRUSEL */
+/* ============================================= */
+
+/* Contenedor del slider */
+.projects-slider {
+    position: relative;
+    padding: 0 40px; /* Espacio para las flechas */
+}
+
+/* Estilos base para las flechas */
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 170, 255, 0.9);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Efecto hover */
+.slick-prev:hover, .slick-next:hover {
+    background: #0088cc;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Posición de la flecha izquierda */
+.slick-prev {
+    left: 0;
+}
+
+/* Posición de la flecha derecha */
+.slick-next {
+    right: 0;
+}
+
+/* Íconos de las flechas */
+.slick-prev i, .slick-next i {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Deshabilitar flechas cuando sea necesario (Slick las oculta automáticamente) */
+.slick-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.slick-disabled:hover {
+    background: rgba(0, 170, 255, 0.9);
+    transform: translateY(-50%) scale(1);
+}
+
+/* ============================================= */
+/* AJUSTES PARA EL SLIDER AUTOMÁTICO EXISTENTE */
+/* ============================================= */
+
+.auto-slider {
+    overflow: hidden;
+    width: 100%;
+    padding: 30px 40px; /* Aumentar padding para las flechas */
+    background: #f8f8f8;
+    position: relative;
+}
+
+/* Contenedor de las flechas para el slider automático */
+.auto-slider-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: none; /* Permitir clic en los botones */
+}
+
+.auto-slider-nav button {
+    pointer-events: all; /* Permitir clic en los botones */
+}
+
+/* Flechas para el slider automático (CSS puro) */
+.auto-slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 170, 255, 0.9);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+.auto-slider-arrow:hover {
+    background: #0088cc;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.auto-slider-arrow.prev {
+    left: 10px;
+}
+
+.auto-slider-arrow.next {
+    right: 10px;
+}
+
+.auto-slider-arrow i {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ============================================= */
+/* VERSIÓN CON SLICK PARA EL CARRUSEL AUTOMÁTICO */
+/* ============================================= */
+
+/* Si prefieres usar Slick en lugar del CSS animation */
+.auto-slider-slick {
+    padding: 30px 40px;
+    background: #f8f8f8;
+}
+
+.auto-slider-slick .slider-track {
+    animation: none; /* Desactivar animación CSS */
+}
+
+.auto-slider-slick .slick-slide {
+    padding: 0 10px;
+}
+
+.auto-slider-slick .slide {
+    min-width: auto; /* Slick maneja el ancho */
+}
+
+/* Responsive para flechas */
+@media (max-width: 768px) {
+    .projects-slider,
+    .auto-slider {
+        padding: 30px 35px;
+    }
+    
+    .slick-prev, .slick-next,
+    .auto-slider-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .slick-prev i, .slick-next i,
+    .auto-slider-arrow i {
+        font-size: 18px;
+    }
+    
+    .slick-prev {
+        left: -5px;
+    }
+    
+    .slick-next {
+        right: -5px;
+    }
+    
+    .auto-slider-arrow.prev {
+        left: 5px;
+    }
+    
+    .auto-slider-arrow.next {
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-slider,
+    .auto-slider {
+        padding: 30px 30px;
+    }
+    
+    .slick-prev, .slick-next,
+    .auto-slider-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .slick-prev i, .slick-next i,
+    .auto-slider-arrow i {
+        font-size: 16px;
+    }
+    
+    .slick-prev {
+        left: -10px;
+    }
+    
+    .slick-next {
+        right: -10px;
+    }
+    
+    .auto-slider-arrow.prev {
+        left: 0;
+    }
+    
+    .auto-slider-arrow.next {
+        right: 0;
+    }
+}
+
+
+
 
 
 

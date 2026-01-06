@@ -530,6 +530,7 @@ width: 11px;
     overflow: hidden;
     width: 30%;
     left: 7%;
+    margin-bottom: 50px;
 }
 
 .plus {
@@ -613,16 +614,18 @@ figcaption.mask span {
 
 .counter-section {
   background-color: #0584ce;
+  box-shadow: 0px 0px 25px rgba(5, 132, 206, 0.8);
   padding: 25px 0 40px;
 }
 
 #count2 {
-  background-color: #0584ce;
+  background-color: rgb(5, 132, 206);  
   padding-bottom: 90px;
 }
 
 .counter-section2 {
-  background-color: #121116;
+  background-color: rgb(18, 17, 22, 0.7);
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.8);
   padding: 25px 0 40px;
 }
 
@@ -681,7 +684,7 @@ figcaption.mask span {
 }
 
 .section-title-about h2 {
-  color: #1f2021;
+  color: #e9e9e9;
   font-size: 30px;
   position: relative;
   margin-bottom: 25px;
@@ -744,7 +747,7 @@ width: 11px;
 }
 
 .section-title-about2 h2:before {
-  border-bottom: 1px solid #0584ce;
+  border-bottom: 1px solid rgb(5, 132, 206);   
   bottom: 0;
   content: "";
   left: 50%;
@@ -1135,19 +1138,20 @@ img.img-circle {
 .contact-details {
   flex: 1;
   min-width: 250px;
-  background-color: #0584ce;
+  color: #ffffff !important;
+  background-color: #3e4532;
   padding: 30px;
   margin-top: 70px;
   margin-bottom: 70px;
   border-radius: 8px;
   transition: all 0.3s ease;
   text-align: center;
-  color: #ffffff;
+  
 }
 
 .contact-details:hover {
-  background-color: #1f2021;
-  color: #0584ce;
+  background-color: #0584ce;
+  color: #ffffff;
   transform: translateY(-5px);
 }
 
@@ -1171,7 +1175,7 @@ img.img-circle {
 
 .contact-details:hover span,
 .contact-details:hover p {
-  color: #0584ce;
+  color: #fdfdfd;
 }
 
 .contact-details i {
@@ -1179,12 +1183,12 @@ img.img-circle {
 }
 
 .contact-link{
-  color: #1f2021;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .contact-link:hover{
-  color: #0584ce;
+  color: #ffffff;
 }
 
 /*============================================================

@@ -6,3 +6,25 @@ const phrases = document.querySelectorAll('.latin-p');
     index = (index + 1) % phrases.length;
     phrases[index].classList.add('active');
   }, 10000); // cambia cada 10 segundos
+
+
+  // Función para mostrar el modal
+$(document).ready(function() {
+    $(".fancybox").fancybox({
+        padding: 0,
+        margin: 20,
+        autoSize: true,
+        autoCenter: true,
+        fitToView: true,
+        scrolling: 'no',
+        openEffect: 'fade',
+        openSpeed: 300,
+        closeEffect: 'fade',
+        closeSpeed: 200,
+        helpers: {
+            overlay: {
+                closeClick: false
+            }
+        }
+    });
+});

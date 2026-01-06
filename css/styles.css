@@ -81,6 +81,7 @@
   color: #ffffff;
 }
 
+
 .border-about-rectangle {
   border: 1px dotted aqua;
   box-shadow: 5px 5px 15px rgba(0, 255, 255, 0.3);
@@ -145,3 +146,59 @@
     padding: 6px 10px;
   }
 }
+
+
+
+/* MODAL */
+/* ESTILOS PARA LOS MODALES DE TEXTO */
+.thrivana-modal {
+    padding: 30px;
+    max-width: 600px;
+    background: #0584ce;
+    border-radius: 2px;
+    position: relative;
+}
+.thrivana-modal h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 24px;
+    font-weight: 700;
+}
+.thrivana-modal .modal-content {
+    color: #ffffff;
+    line-height: 1.6;
+}
+.thrivana-modal p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.thrivana-modal ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+.thrivana-modal li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    position: relative;
+    padding-left: 5px;
+}
+.thrivana-modal li:before {
+    content: "✓";
+    color: #0584ce;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.thrivana-modal strong {
+    margin-top: 10px !important;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: large;
+}
+
+.modal-content{
+  background-color: #3e4532;
+  padding: 10px 30px;
+}
+
