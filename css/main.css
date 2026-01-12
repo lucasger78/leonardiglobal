@@ -539,6 +539,8 @@ width: 11px;
   display: block;
   height: 80px;
   left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
   margin: -40px 0 0 -40px;
   position: absolute;
   top: -41px;
