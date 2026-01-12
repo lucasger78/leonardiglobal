@@ -607,14 +607,22 @@ figcaption.mask span {
 
 /* Counter section */
 
+/* #count {
+  background-color: #b31753;
+  padding-bottom: 90px;
+} */
+
 #count {
-  background-color: #121116;
+  background-image: url("../img/about/background-about.png");
+  background-size: cover;       /* hace que la imagen cubra todo el área */
+  background-position: center;  /* centra la imagen */
+  background-repeat: no-repeat; /* evita que se repita */
   padding-bottom: 90px;
 }
 
 .counter-section {
-  background-color: #0584ce;
-  box-shadow: 0px 0px 25px rgba(5, 132, 206, 0.8);
+  background-color: rgba(5, 132, 206, 0.8);
+  box-shadow: 0px 0px 25px rgba(5, 132, 206, 0.6);
   padding: 25px 0 40px;
 }
 

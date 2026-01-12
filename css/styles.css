@@ -109,13 +109,66 @@
   border: 1px dotted rgb(51, 51, 51);
   box-shadow: 5px 5px 5px rgba(51, 51, 51, 0.3);
   padding: 20px;
-  transition: all 0.3s ease; /* suaviza el efecto */
+  transition: all 0.3s ease; 
 }
 
 .tst-single:hover {
-  transform: translateY(-6px); /* se mueve un poco hacia arriba */
-  box-shadow: inset 0 0 10px rgba(5, 132, 206, 0.4); /* sombra interior */
+  transform: translateY(-6px); 
+  box-shadow: inset 0 0 10px rgba(5, 132, 206, 0.4); 
   border: 1px dotted rgb(5, 132, 206);
+}
+
+.tst-item {
+  display: flex;
+  flex-wrap: wrap; /* permite que se acomoden si el espacio es limitado */
+  gap: 20px; /* espacio entre tarjetas */
+  justify-content: space-between; /* distribuye horizontalmente */
+}
+
+.tst-single {
+  flex: 1 1 30%; /* cada tarjeta ocupa ~30% del ancho, se adapta */
+  box-sizing: border-box;
+}
+
+.tst-single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px dotted rgb(51, 51, 51);
+  box-shadow: 5px 5px 5px rgba(51, 51, 51, 0.3);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.tst-single:hover {
+  transform: translateY(-6px);
+  box-shadow: inset 0 0 10px rgba(5, 132, 206, 0.4);
+  border: 1px dotted rgb(5, 132, 206);
+}
+
+.tst-single img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;  
+}
+
+/* .tst-content {
+  max-width: 300px;
+} */
+
+.tst-content p,
+.tst-content ul,
+.tst-content h4 {
+  text-align: center;
+}
+
+.tst-content {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 
@@ -147,6 +200,27 @@
   }
 }
 
+@media (max-width: 768px) {
+  .tst-item {
+    flex-direction: column;
+  }
+
+  .tst-single {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tst-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tst-single {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
 
 
 /* MODAL */
