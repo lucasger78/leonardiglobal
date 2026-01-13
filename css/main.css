@@ -623,9 +623,15 @@ figcaption.mask span {
 }
 
 .counter-section {
-  background-color: rgba(5, 132, 206, 0.8);
-  box-shadow: 0px 0px 25px rgba(5, 132, 206, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+  border: none;
+  color:#1F2021;
   padding: 25px 0 40px;
+}
+
+.h2-about {
+    color: #1F2021 !important;
 }
 
 #count2 {
@@ -1288,8 +1294,8 @@ img.img-circle {
      display: flex;
      margin-top: 20px;
      margin-bottom: 20px;
-     justify-content: center;
-     align-items: center;
+     /* justify-content: center;
+     align-items: center; */
      /* padding: 20px;       */
      /* width: 700px; */
      max-width: 700px;
