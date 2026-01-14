@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
     <head>
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -96,11 +96,11 @@
                     <!-- main nav -->
                     <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
                         <ul id="nav" class="nav navbar-nav">
-                            <li class="current"><a href="#home">Inicio</a></li>
-                            <li><a href="about.html">Sobre Nosotros</a></li>
-                            <li><a href="products.html">Productos</a></li>
-                            <li><a href="blog.html">Noticias</a></li>                            
-                            <li><a href="contact.html">Contacto</a></li>
+                            <li class="current"><a href="#home" data-section="nav" data-value="inicio">Inicio</a></li>
+                            <li><a href="about.html" data-section="nav" data-value="sobre">Sobre Nosotros</a></li>
+                            <li><a href="products.html" data-section="nav" data-value="productos">Productos</a></li>
+                            <li><a href="blog.html" data-section="nav" data-value="noticias">Noticias</a></li>                            
+                            <li><a href="contact.html" data-section="nav" data-value="contacto">Contacto</a></li>
                         </ul>
                     </nav>
                     <!-- /main nav -->
@@ -149,30 +149,20 @@
                     <div class="item active"  style="background-image: url('img/slider/bg2.jpg')" >
                         <div class="carousel-caption">
                             <div class="animated bounceInRight">
-                                <h2 class="title-slide-home">Nutriendo el Futuro con Ciencia y Propósito </h2>
-                                 <p>   Productos sostenibles y saludables con trazabilidad y ética</p>
-                                <p>Leonardi Global S.L. selecciona productos sostenibles, saludables y éticos con trazabilidad completa. Promovemos bienestar, comercio justo y agricultura regenerativa en Europa. Cada decisión que tomamos está guiada por un propósito: elevar la salud de las personas y cuidar el equilibrio del planeta.</p><br>
-                                <!-- <p class="last-line-about">"Nutriendo a la Sociedad con Conciencia y Propósito."</p> -->
+                                <h2 class="title-slide-home" data-section="slider" data-value="titulo-1">Nutriendo el Futuro con Ciencia y Propósito </h2>
+                                 <p data-section="slider" data-value="subtitulo-1">Productos sostenibles y saludables con trazabilidad y ética</p>
+                                <p data-section="slider" data-value="parrafo-1">Leonardi Global S.L. selecciona productos sostenibles, saludables y éticos con trazabilidad completa. Promovemos bienestar, comercio justo y agricultura regenerativa en Europa. Cada decisión que tomamos está guiada por un propósito: elevar la salud de las personas y cuidar el equilibrio del planeta.</p><br>
                             </div>
                         </div>
                     </div>              
 
-                    <!-- <div class="item" style="background-image: url('img/slider/bg2.jpg')">                
-                        <div class="carousel-caption">
-                            <div class="animated bounceInDown">
-                                <h2>HELLO WORLD! <br>WE ARE KASPER,WE MAKE ART.</h2>
-                                <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
-                            </div>
-                        </div>
-                    </div> -->
-
                     <div class="item" style="background-image: url('img/slider/bg3.jpg')">                 
                          <div class="carousel-caption">
                             <div class="animated bounceInRight">
-                                <h2 class="title-slide-home">Curamos lo que el mundo consume</h2>
-                                <p>En Leonardi Global S.L. creemos que cada producto puede cambiar el mundo.
+                                <h2 class="title-slide-home" data-section="slider" data-value="titulo-2">Curamos lo que el mundo consume</h2>
+                                <p data-section="slider" data-value="parrafo-2">En Leonardi Global S.L. creemos que cada producto puede cambiar el mundo.
                                 Nuestra misión es introducir al mercado solo bienes que combinan salud, sostenibilidad y ética</p><br>
-                                <p class="last-line-about">"Representa una inversión en el bienestar de las personas y en el futuro del planeta."</p>
+                                <p class="last-line-about" data-section="slider" data-value="frase-2">"Representa una inversión en el bienestar de las personas y en el futuro del planeta."</p>
                             </div>
                         </div>
                     </div>
@@ -202,8 +192,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title text-center wow fadeInDown">
-                            <h2>Algo de Nosotros</h2>    
-                            <p class="p-title-home">En Leonardi Global somos el puente entre la ciencia, la nutrición y la sostenibilidad. Realizamos una curaduría rigurosa para identificar, seleccionar y promover aquellos productos y proyectos que ofrecen salud real al consumidor, transparencia, y respeto por el entorno.</p>
+                            <h2 data-section="servicio" data-value="titulo">Algo de Nosotros</h2>    
+                            <p class="p-title-home" data-section="servicio" data-value="parrafo">En Leonardi Global somos el puente entre la ciencia, la nutrición y la sostenibilidad. Realizamos una curaduría rigurosa para identificar, seleccionar y promover aquellos productos y proyectos que ofrecen salud real al consumidor, transparencia, y respeto por el entorno.</p>
                         </div>
                     </div>
                 </div>
@@ -215,8 +205,8 @@
                                 <img src="img/icons/vision.png" class="media-object" alt="Visión">
                             </a>
                             <div class="media-body">
-                                <h3>Visión</h3>
-                                <p>Ser un referente europeo en bienestar responsable, certificación basada en ciencia y tecnología aplicada a la trazabilidad, construyendo una red global que elige salud, claridad e impacto positivo.</p>
+                                <h3 data-section="servicio" data-value="vision-titulo">Visión</h3>
+                                <p data-section="servicio" data-value="vision-parrafo">Ser un referente europeo en bienestar responsable, certificación basada en ciencia y tecnología aplicada a la trazabilidad, construyendo una red global que elige salud, claridad e impacto positivo.</p>
                             </div>
                         </div>
 
@@ -228,8 +218,8 @@
                                 <img src="img/icons/mision.png" alt="Misión">
                             </a>
                             <div class="media-body">
-                                <h3>Misión</h3>
-                                <p>Nuestra misión es promover el bienestar de las personas y del planeta, integrando evidencia científica, nutrición sostenible y prácticas responsables en toda la cadena de valor.</p>
+                                <h3 data-section="servicio" data-value="mision-titulo">Misión</h3>
+                                <p data-section="servicio" data-value="mision-parrafo">Nuestra misión es promover el bienestar de las personas y del planeta, integrando evidencia científica, nutrición sostenible y prácticas responsables en toda la cadena de valor.</p>
                             </div>
                         </div>
                         
@@ -241,8 +231,8 @@
                                 <img src="img/icons/work.png" alt="Trabajo">
                             </a>
                             <div class="media-body">
-                                <h3>Trabajo</h3>
-                                <p>Trabajamos junto a productores, marcas y distribuidores para nutrir a la sociedad con conciencia, transparencia y compromiso, manteniendo un estándar de calidad que integre la sostenibilidad con la innovación.</p>
+                                <h3 data-section="servicio" data-value="trabajo-titulo">Trabajo</h3>
+                                <p data-section="servicio" data-value="trabajo-parrafo">Trabajamos junto a productores, marcas y distribuidores para nutrir a la sociedad con conciencia, transparencia y compromiso, manteniendo un estándar de calidad que integre la sostenibilidad con la innovación.</p>
                             </div>
                         </div>
                     </div>
@@ -253,8 +243,8 @@
                                 <img src="img/icons/confianza.png" alt="Confianza">
                             </a>
                             <div class="media-body">
-                                <h3>Confianza</h3>
-                                <p>Cada producto que certificamos es una inversión en el futuro: en el trabajo consciente de quienes producen con ética y en el bienestar de quienes consumen con propósito.</p>
+                                <h3 data-section="servicio" data-value="confianza-titulo">Confianza</h3>
+                                <p data-section="servicio" data-value="confianza-parrafo">Cada producto que certificamos es una inversión en el futuro: en el trabajo consciente de quienes producen con ética y en el bienestar de quienes consumen con propósito.</p>
                             </div>
                         </div>
                     </div>
@@ -267,38 +257,59 @@
         ========================== -->
         <!--
         #quotes
-        ========================== -->
-        <!-- <section id="quotes">
-            <div class="container">
-                <div class="row wow zoomIn">
-                    <div class="col-lg-12">
-                        <div class="call-to-action text-center">
-                            <p class="latin-p">“Natura duce, vita integra — sequere semina salutis et florebis cum animo et corpore.”</p>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+        ========================== --> 
         <section id="quotes">
             <div class="container">
                 <div class="row">
                 <div class="col-lg-12">
                     <div class="call-to-action text-center">
                     <div class="latin-carousel">
-                        <p class="latin-p active">“Natura duce, vita integra — sequere semina salutis et florebis cum animo et corpore.” <br><br><i class="latin-trad">(Con la naturaleza como guía, la vida será plena — sigue las semillas del bienestar y florecerás con mente y cuerpo.)</i></p>
-                        <p class="latin-p">“In tranquillitate veritas et in pace inventitur pura sanitas.”
-                            <br><br><i class="latin-trad">(En la tranquilidad se encuentra la verdad, y en la paz, la salud pura.)</i></p>
-                        <p class="latin-p">“Corpus nutrimentum, animus lux — sic vivas in harmonia cum mundo.”
-                            <br><br><i class="latin-trad">(El cuerpo es nutrición, el alma es luz — así vivirás en armonía con el mundo.)</i></p>
-                        <p class="latin-p">“Amore naturae et cura sui — ita bene vivitur et longe prosperatur.”
-                            <br><br><i class="latin-trad">(Con amor por la naturaleza y cuidado de uno mismo — así se vive bien y se prospera largamente.)</i></p>
+                        <p class="latin-p active">
+                            "Natura duce, vita integra – sequere semina salutis et florebis cum animo et corpore." 
+                            <br><br>
+                            <i class="latin-trad" data-section="quotes" data-value="frase-1">
+                                (Con la naturaleza como guía, la vida será plena – sigue las semillas del bienestar y florecerás con mente y cuerpo.)
+                            </i>
+                        </p>
+                        
+                        <p class="latin-p">
+                            "In tranquillitate veritas et in pace inventitur pura sanitas."
+                            <br><br>
+                            <i class="latin-trad" data-section="quotes" data-value="frase-2">
+                                (En la tranquilidad se encuentra la verdad, y en la paz, la salud pura.)
+                            </i>
+                        </p>
+                        
+                        <p class="latin-p">
+                            "Corpus nutrimentum, animus lux – sic vivas in harmonia cum mundo."
+                            <br><br>
+                            <i class="latin-trad" data-section="quotes" data-value="frase-3">
+                                (El cuerpo es nutrición, el alma es luz – así vivirás en armonía con el mundo.)
+                            </i>
+                        </p>
+                        
+                        <p class="latin-p">
+                            "Amore naturae et cura sui – ita bene vivitur et longe prosperatur."
+                            <br><br>
+                            <i class="latin-trad" data-section="quotes" data-value="frase-4">
+                                (Con amor por la naturaleza y cuidado de uno mismo – así se vive bien y se prospera largamente.)
+                            </i>
+                        </p>
                     </div>
                     </div>
                 </div>
                 </div>
             </div>
         </section>
+
+
+
+
+
+
+
+
+
         <!--
         End #quotes
         ========================== -->
@@ -318,7 +329,7 @@
                         </div>
 
                         <div class="footer-social wow fadeInUp">
-                            <h3>Encuéntranos</h3>
+                            <h3 data-section="footer" data-value="encuentranos">Encuéntranos</h3>
                             <ul class="text-center list-inline">
                                 <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
@@ -328,7 +339,7 @@
 
                         <div class="copyright">
                            
-                            <p>Todos los derechos reservados <a href="http://leonardiglobal.com">leonardiglobal.com</a> Developed by <a target="_blank" href="http://www.lucasconti.netlify.app">Lucas Conti</a></p>
+                            <p data-section="footer" data-value="derechos">Todos los derechos reservados <a href="http://leonardiglobal.com">leonardiglobal.com</a> Developed by <a target="_blank" href="http://www.lucasconti.netlify.app">Lucas Conti</a></p>
                         </div>
 
                     </div>
@@ -366,6 +377,8 @@
         <script src="js/wow.min.js"></script>
         <!-- theme custom scripts -->
         <script src="js/main.js"></script>
+        <!-- Languages script -->
+        <script src="js/languages.js"></script>
         <!-- script -->
         <script src="js/script.js"></script>
     </body>

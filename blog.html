@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
     <head>
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -101,11 +101,11 @@
                     <!-- main nav -->
                     <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
                         <ul id="nav" class="nav navbar-nav">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="about.html">Sobre Nosotros</a></li>
-                            <li><a href="products.html">Productos</a></li>
-                            <li class="current"><a href="blog.html">Noticias</a></li>                            
-                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="index.html" data-section="nav" data-value="inicio">Inicio</a></li>
+                            <li><a href="about.html" data-section="nav" data-value="sobre">Sobre Nosotros</a></li>
+                            <li><a href="products.html" data-section="nav" data-value="productos">Productos</a></li>
+                            <li class="current"><a href="blog.html" data-section="nav" data-value="noticias">Noticias</a></li>                            
+                            <li><a href="contact.html" data-section="nav" data-value="contacto">Contacto</a></li>
                         </ul>
                     </nav>
                     <!-- /main nav -->
@@ -142,8 +142,8 @@
         <section id="portfolio-news">
 
             <div class="section-title text-center wow fadeInDown">
-                <h2>Noticias</h2>    
-                <h3 class="h3-news">Desde la Tierra - Historias que Inspiran.</h3>
+                <h2 data-section="blog" data-value="titulo">Noticias</h2>    
+                <h3 class="h3-news" data-section="blog" data-value="subtitulo">Desde la Tierra - Historias que Inspiran.</h3>
             </div>
             
           
@@ -154,8 +154,8 @@
                     <div class="slide has-content">
                         <img src="img/news/news-1.jpg" alt="Alimentación consciente">
                         <div class="slide-overlay">
-                            <p class="slide-title">Qué significa alimentación consciente</p>
-                            <a href="https://leonardiglobal.com" class="btn-leer-mas">Leer Más</a>
+                            <p class="slide-title" data-section="blog" data-value="noticia-1">Qué significa alimentación consciente</p>
+                            <a href="https://leonardiglobal.com" class="btn-leer-mas" data-section="blog" data-value="btn-leer">Leer Más</a>
                         </div>
                     </div>
                     
@@ -163,8 +163,8 @@
                     <div class="slide has-content">
                         <img src="img/news/news-2.jpg" alt="Del productor al consumidor">
                         <div class="slide-overlay">
-                            <p class="slide-title">Del productor al consumidor</p>
-                            <a href="https://leonardiglobal.com" class="btn-leer-mas">Leer Más</a>
+                            <p class="slide-title" data-section="blog" data-value="noticia-2">Del productor al consumidor</p>
+                            <a href="https://leonardiglobal.com" class="btn-leer-mas" data-section="blog" data-value="btn-leer">Leer Más</a>
                         </div>
                     </div>
                     
@@ -172,8 +172,8 @@
                     <div class="slide has-content">
                         <img src="img/news/news-3.jpg" alt="Tendencias en consumo sostenible">
                         <div class="slide-overlay">
-                            <p class="slide-title">Tendencias en consumo sostenible</p>
-                            <a href="https://leonardiglobal.com" class="btn-leer-mas">Leer Más</a>
+                            <p class="slide-title" data-section="blog" data-value="noticia-3">Tendencias en consumo sostenible</p>
+                            <a href="https://leonardiglobal.com" class="btn-leer-mas" data-section="blog" data-value="btn-leer">Leer Más</a>
                         </div>
                     </div>
                     
@@ -181,8 +181,8 @@
                     <div class="slide has-content">
                         <img src="img/news/news-4.jpg" alt="Entrevistas con productores">
                         <div class="slide-overlay">
-                            <p class="slide-title">Entrevistas con productores</p>
-                            <a href="https://leonardiglobal.com" class="btn-leer-mas">Leer Más</a>
+                            <p class="slide-title" data-section="blog" data-value="noticia-4">Entrevistas con productores</p>
+                            <a href="https://leonardiglobal.com" class="btn-leer-mas" data-section="blog" data-value="btn-leer">Leer Más</a>
                         </div>
                     </div>
                     
@@ -190,8 +190,8 @@
                     <div class="slide has-content">
                         <img src="img/news/news-1.jpg" alt="Alimentación consciente">
                         <div class="slide-overlay">
-                            <p class="slide-title">Qué significa alimentación consciente</p>
-                            <a href="https://leonardiglobal.com" class="btn-leer-mas">Leer Más</a>
+                            <p class="slide-title" data-section="blog" data-value="noticia-1">Qué significa alimentación consciente</p>
+                            <a href="https://leonardiglobal.com" class="btn-leer-mas" data-section="blog" data-value="btn-leer">Leer Más</a>
                         </div>
                     </div>
                     
@@ -199,8 +199,8 @@
                     <div class="slide has-content">
                         <img src="img/news/news-2.jpg" alt="Del productor al consumidor">
                         <div class="slide-overlay">
-                            <p class="slide-title">Del productor al consumidor</p>
-                            <a href="https://leonardiglobal.com" class="btn-leer-mas">Leer Más</a>
+                            <p class="slide-title" data-section="blog" data-value="noticia-2">Del productor al consumidor</p>
+                            <a href="https://leonardiglobal.com" class="btn-leer-mas" data-section="blog" data-value="btn-leer">Leer Más</a>
                         </div>
                     </div>
                 </div>
@@ -221,7 +221,7 @@
                         </div>
 
                         <div class="footer-social wow fadeInUp">
-                            <h3>Encuéntranos</h3>
+                            <h3 data-section="footer" data-value="encuentranos">Encuéntranos</h3>
                             <ul class="text-center list-inline">
                                 <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
@@ -231,7 +231,7 @@
 
                         <div class="copyright">
                            
-                            <p>Todos los derechos reservados <a href="http://leonardiglobal.com">leonardiglobal.com</a> Developed by <a target="_blank" href="http://www.lucasconti.netlify.app">Lucas Conti</a></p>
+                            <p data-section="footer" data-value="derechos">Todos los derechos reservados <a href="http://leonardiglobal.com">leonardiglobal.com</a> Developed by <a target="_blank" href="http://www.lucasconti.netlify.app">Lucas Conti</a></p>
                         </div>
 
                     </div>
@@ -271,6 +271,8 @@
         <script src="js/main.js"></script>
         <!-- news scripts -->
         <script src="js/news.js"></script>
+        <!-- Languages script -->
+        <script src="js/languages.js"></script>
         <!-- script -->
         <script src="js/script.js"></script>
         <!-- jQuery (necesario para Slick) -->

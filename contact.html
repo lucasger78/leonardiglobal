@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
     <head>
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -94,11 +94,11 @@
                     <!-- main nav -->
                     <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
                         <ul id="nav" class="nav navbar-nav">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="about.html">Sobre Nosotros</a></li>
-                            <li><a href="products.html">Productos</a></li>
-                            <li><a href="blog.html">Noticias</a></li>                            
-                            <li class="current"><a href="contact.html">Contacto</a></li>
+                            <li><a href="index.html" data-section="nav" data-value="inicio">Inicio</a></li>
+                            <li><a href="about.html" data-section="nav" data-value="sobre">Sobre Nosotros</a></li>
+                            <li><a href="products.html" data-section="nav" data-value="productos">Productos</a></li>
+                            <li><a href="blog.html" data-section="nav" data-value="noticias">Noticias</a></li>                            
+                            <li class="current"><a href="contact.html" data-section="nav" data-value="contacto">Contacto</a></li>
                         </ul>
                     </nav>
                     <!-- /main nav -->
@@ -140,24 +140,23 @@
                 <div class="row">
 
                     <div class="section-title text-center wow fadeInDown">
-                        <h2 class="section-title">Contáctanos</h2>
-                        <!-- <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p> -->
+                        <h2 class="section-title" data-section="contacto" data-value="titulo">Contáctanos</h2>
                     </div>
                     
                     <div class="contact-row">
                         <div class="contact-details" style="color: white;">
-                            <span style="color: white;"><i class="fab fa-whatsapp icon-contact" style="color: white;"></i> Whatsapp</span>
+                            <span style="color: white;"><i class="fab fa-whatsapp icon-contact" style="color: white;"></i> <span data-section="contacto" data-value="whatsapp">Whatsapp</span></span>
                             <a href="https://walink.co/htnqw1" target="_blank" class="contact-link"><p>+34662601578</p></a>
                         </div>
 
                         <div class="contact-details" style="color: white;">
-                            <span style="color: white;"><i class="fa fa-envelope icon-contact" style="color: white;"></i> E-mail</span>
+                            <span style="color: white;"><i class="fa fa-envelope icon-contact" style="color: white;"></i> <span data-section="contacto" data-value="email">E-mail</span></span>
                             <a href="mailto:contacto@leonardiglobal.com" target="_blank" class="contact-link"><p>contacto@leonardiglobal.com</p></a>
                         </div>
 
                         <div class="contact-details" style="color: white;">
-                            <span style="color: white;"><i class="fa fa-map-marker icon-contact" style="color: white;"></i> Dirección</span>
-                            <a href="#" target="_blank" class="contact-link"><p>Direccion Av Roma 23-Tarragona</p></a>
+                            <span style="color: white;"><i class="fa fa-map-marker icon-contact" style="color: white;"></i> <span data-section="contacto" data-value="direccion">Dirección</span></span>
+                            <a href="#" target="_blank" class="contact-link"><p data-section="contacto" data-value="direccion-text">Direccion Av Roma 23-Tarragona</p></a>
                         </div>
 
                     </div>
@@ -181,7 +180,7 @@
                         </div>
 
                         <div class="footer-social wow fadeInUp">
-                            <h3>Encuéntranos</h3>
+                            <h3 data-section="footer" data-value="encuentranos">Encuéntranos</h3>
                             <ul class="text-center list-inline">
                                 <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
@@ -191,7 +190,7 @@
 
                         <div class="copyright">
                            
-                            <p>Todos los derechos reservados <a href="http://leonardiglobal.com">leonardiglobal.com</a> Developed by <a target="_blank" href="http://www.lucasconti.netlify.app">Lucas Conti</a></p>
+                            <p data-section="footer" data-value="derechos">Todos los derechos reservados <a href="http://leonardiglobal.com">leonardiglobal.com</a> Developed by <a target="_blank" href="http://www.lucasconti.netlify.app">Lucas Conti</a></p>
                         </div>
 
                     </div>
@@ -229,6 +228,8 @@
         <script src="js/wow.min.js"></script>
         <!-- theme custom scripts -->
         <script src="js/main.js"></script>
+        <!-- Languages script -->
+        <script src="js/languages.js"></script>
         <!-- script -->
         <script src="js/script.js"></script>
     </body>

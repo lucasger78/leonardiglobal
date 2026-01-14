@@ -390,7 +390,17 @@ width: 11px;
     font-weight: 400;
     font-size: 20px;
     margin-bottom: 15px;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    hyphens: auto !important;
+    font-size: 1.2em !important;
 }
+
+[lang="pt"] .media-body h3,
+[lang="por"] .media-body h3 {
+    font-size: 1.1em !important;
+}
+
 
 #service .media .media-body p{
     color: #A8A8A8;

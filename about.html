@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
     <head>
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -95,11 +95,11 @@
                     <!-- main nav -->
                     <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
                         <ul id="nav" class="nav navbar-nav">
-                           <li><a href="index.html">Inicio</a></li>
-                            <li class="current"><a href="about.html">Sobre Nosotros</a></li>
-                            <li><a href="products.html">Productos</a></li>
-                            <li><a href="blog.html">Noticias</a></li>                            
-                            <li><a href="contact.html">Contacto</a></li>
+                           <li><a href="index.html" data-section="nav" data-value="inicio">Inicio</a></li>
+                            <li class="current"><a href="about.html" data-section="nav" data-value="sobre">Sobre Nosotros</a></li>
+                            <li><a href="products.html" data-section="nav" data-value="productos">Productos</a></li>
+                            <li><a href="blog.html" data-section="nav" data-value="noticias">Noticias</a></li>                            
+                            <li><a href="contact.html" data-section="nav" data-value="contacto">Contacto</a></li>
                         </ul>
                     </nav>
                     <!-- /main nav -->
@@ -130,32 +130,12 @@
        
         #about
         ========================== -->
-        <!-- <section id="about">
-            <div class="container">
-                <div class="row">
-
-                    <div class="section-title text-center wow fadeInUp ">
-                        <h2 class="section-title">Sobre Nosotros</h2>    
-                        <h3 class="h3-about">Curamos lo que el mundo consume</h3><br>
-                        <p class="p-about">
-                        En Leonardi Global S.L. creemos que cada producto puede cambiar el mundo.
-                        Nuestra misión es introducir al mercado solo bienes que combinan salud, sostenibilidad y ética.
-                        Cada artículo que seleccionamos representa una inversión en el bienestar de las personas y en el futuro del planeta.
-                        </p>
-                    </div>
-                    
-                    <div class="about-us-img text-center wow fadeInDown">
-                        <img src="img/about/about.jpg" alt="About Us" class="img-responsive">
-                    </div>
-                </div>
-            </div>
-        </section> -->
 
         <section id="about">
             <div class="container">
                 <div class="row">
                 <div class="section-title text-center wow fadeInUp">
-                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <h2 class="section-title" data-section="about" data-value="titulo">Sobre Nosotros</h2>
                 </div>
 
                 <div class="about-content wow fadeInUp">
@@ -164,8 +144,8 @@
                     </div>
 
                     <div class="about-text">
-                    <h3 class="h3-about">Curamos lo que el mundo consume</h3>
-                    <p class="p-about">
+                    <h3 class="h3-about" data-section="about" data-value="subtitulo">Curamos lo que el mundo consume</h3>
+                    <p class="p-about" data-section="about" data-value="parrafo-1">
                         En Leonardi Global S.L. creemos que cada producto puede cambiar el mundo.<br>
                         Nuestra misión es introducir al mercado solo bienes que combinan salud, sostenibilidad y ética.<br>
                         Cada artículo que seleccionamos representa una inversión en el bienestar de las personas y en el futuro del planeta.
@@ -194,11 +174,11 @@
                     <div class="counter-section clearfix">
 
                         <div class="section-title-about text-center wow fadeInUp">
-                            <h2 class="h2-about">Nuestro Propósito</h2>    
-                            <h3 class="text-about-rectangle border-about-rectangle">Ser el filtro</h3><br>
-                            <p class="text-about-rectangle border-about-rectangle text-about-top"> Ejercemos una curaduría rigurosa de productos naturales y sostenibles, asegurando que cada elección del consumidor tenga impacto positivo.
+                            <h2 class="h2-about" data-section="proposito" data-value="titulo">Nuestro Propósito</h2>    
+                            <h3 class="text-about-rectangle border-about-rectangle h3-proposito" data-section="proposito" data-value="subtitulo">Ser el filtro</h3><br>
+                            <p class="text-about-rectangle border-about-rectangle text-about-top" data-section="proposito" data-value="parrafo"> Ejercemos una curaduría rigurosa de productos naturales y sostenibles, asegurando que cada elección del consumidor tenga impacto positivo.
                             Buscamos construir una cadena de valor más humana, donde la nutrición, la transparencia y la responsabilidad ambiental sean los pilares del crecimiento.</p> <br>
-                            <h4 class="last-line-about text-about-rectangle border-about-rectangle">“ Seleccionamos propósitos que nutren.”</h4>
+                            <h4 class="last-line-about text-about-rectangle border-about-rectangle" data-section="proposito" data-value="frase">" Seleccionamos propósitos que nutren."</h4>
                         </div>
 
                     </div>
@@ -222,20 +202,20 @@
                         <div id="testimonial">
                         
                             <div class="tst-item clearfix">
-                                <h3 class="about-ejes">Ejes de Nuestro Compromiso</h3>
+                                <h3 class="about-ejes" data-section="ejes" data-value="titulo">Ejes de Nuestro Compromiso</h3>
                                 <div class="tst-single clearfix">
                                     <img src="img/about/1.jpg" alt="Client" class="img-circle">
                                     <div class="tst-content">
                                         
-                                        <h4 class="about-title-items">Integridad Nutricional</h4>
-                                        <p>Defendemos una alimentación limpia y transparente.
+                                        <h4 class="about-title-items" data-section="ejes" data-value="eje-1-titulo">Integridad Nutricional</h4>
+                                        <p data-section="ejes" data-value="eje-1-parrafo-1">Defendemos una alimentación limpia y transparente.
                                         Nuestros productos se caracterizan por:</p><br><br>
                                         <ul class="li-about">
-                                            <li>Procesamiento mínimo y natural.</li>
-                                            <li>Ingredientes puros, sin aditivos innecesarios.</li>
-                                            <li>Equilibrio entre sabor, salud y origen ético.</li>
+                                            <li data-section="ejes" data-value="eje-1-item-1">Procesamiento mínimo y natural.</li>
+                                            <li data-section="ejes" data-value="eje-1-item-2">Ingredientes puros, sin aditivos innecesarios.</li>
+                                            <li data-section="ejes" data-value="eje-1-item-3">Equilibrio entre sabor, salud y origen ético.</li>
                                         </ul>
-                                        <h4 class="last-line-about">Cada producto es una invitación a vivir de forma más consciente y saludable.</h4>
+                                        <h4 class="last-line-about" data-section="ejes" data-value="eje-1-frase">Cada producto es una invitación a vivir de forma más consciente y saludable.</h4>
                                         
                                     </div>
                                 </div>
@@ -244,30 +224,30 @@
                                     <img src="img/about/2.jpg" alt="Client" class="img-circle">
                                    <div class="tst-content">
                                         
-                                        <h4 class="about-title-items">Trazabilidad y Ética</h4>
-                                        <p>Como agente de la cadena de valor, exigimos trazabilidad completa y certificaciones verificables.
+                                        <h4 class="about-title-items" data-section="ejes" data-value="eje-2-titulo">Trazabilidad y Ética</h4>
+                                        <p data-section="ejes" data-value="eje-2-parrafo-1">Como agente de la cadena de valor, exigimos trazabilidad completa y certificaciones verificables.
                                         Trabajamos con productores que practican:</p>
                                         <ul class="li-about">
-                                            <li>Agricultura regenerativa.</li>
-                                            <li>Comercio justo y prácticas laborales éticas.</li>
-                                            <li>Uso responsable de los recursos naturales.</li>
+                                            <li data-section="ejes" data-value="eje-2-item-1">Agricultura regenerativa.</li>
+                                            <li data-section="ejes" data-value="eje-2-item-2">Comercio justo y prácticas laborales éticas.</li>
+                                            <li data-section="ejes" data-value="eje-2-item-3">Uso responsable de los recursos naturales.</li>
                                         </ul>
-                                        <h4 class="last-line-about">Sabés de dónde viene lo que consumís, y a quién estás ayudando con cada compra.</h4>
+                                        <h4 class="last-line-about" data-section="ejes" data-value="eje-2-frase">Sabés de dónde viene lo que consumís, y a quién estás ayudando con cada compra.</h4>
                                     </div>
                                 </div>
                                 <div class="tst-single clearfix">
                                     <img src="img/about/3.jpg" alt="Client" class="img-circle">
                                       <div class="tst-content">
                                         
-                                        <h4 class="about-title-items">Sostenibilidad</h4>
-                                        <p>Nuestra responsabilidad comienza en el origen y termina en tu mesa.
+                                        <h4 class="about-title-items" data-section="ejes" data-value="eje-3-titulo">Sostenibilidad</h4>
+                                        <p data-section="ejes" data-value="eje-3-parrafo-1">Nuestra responsabilidad comienza en el origen y termina en tu mesa.
                                         Seleccionamos socios que impulsan:</p>
                                         <ul class="li-about">
-                                            <li>Producción de bajo impacto ambiental.</li>
-                                            <li>Innovación en envases sustentables.</li>
-                                            <li>Proyectos de regeneración comunitaria y ambiental.</li>
+                                            <li data-section="ejes" data-value="eje-3-item-1">Producción de bajo impacto ambiental.</li>
+                                            <li data-section="ejes" data-value="eje-3-item-2">Innovación en envases sustentables.</li>
+                                            <li data-section="ejes" data-value="eje-3-item-3">Proyectos de regeneración comunitaria y ambiental.</li>
                                         </ul>
-                                        <h4 class="last-line-about">Cuidar el planeta también puede ser una decisión cotidiana.</h4>
+                                        <h4 class="last-line-about" data-section="ejes" data-value="eje-3-frase">Cuidar el planeta también puede ser una decisión cotidiana.</h4>
                                     </div>
                                 </div>
                             </div>
@@ -276,22 +256,6 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="count2">
-            <div class="container">
-                <div class="row">
-                    <div class="counter-section2 clearfix">
-
-                        <div class="section-title-about2 text-center wow fadeInUp">
-                            <h2 class="text-about-rectangle" style="color: white;"> Nuestro Compromiso con el Futuro</h2>    
-                            <h3 class="text-about-rectangle border-about-rectangle">En Leonardi Global unimos ciencia, ética y pasión por el bienestar.
-                            Creemos que el consumo consciente es la fuerza que puede regenerar economías, suelos y vínculos humanos.</h3><br>
-                            <h4 class="last-line-about2 text-about-rectangle border-about-rectangle"> Cuando elegís un producto Leonardi Global, elegís formar parte de una economía más justa y sostenible.</h4>
-                        </div>
-
-                    </div>
-                </div>                
-            </div>
-        </section> -->
         <!--
         End #about-us
         ========================== -->
@@ -312,7 +276,7 @@
                         </div>
 
                         <div class="footer-social wow fadeInUp">
-                            <h3>Encuéntranos</h3>
+                            <h3 data-section="footer" data-value="encuentranos">Encuéntranos</h3>
                             <ul class="text-center list-inline">
                                 <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
@@ -322,7 +286,7 @@
 
                         <div class="copyright">
                            
-                            <p>Todos los derechos reservados <a href="http://leonardiglobal.com">leonardiglobal.com</a> Developed by <a target="_blank" href="http://www.lucasconti.netlify.app">Lucas Conti</a></p>
+                            <p data-section="footer" data-value="derechos">Todos los derechos reservados <a href="http://leonardiglobal.com">leonardiglobal.com</a> Developed by <a target="_blank" href="http://www.lucasconti.netlify.app">Lucas Conti</a></p>
                         </div>
 
                     </div>
@@ -360,6 +324,8 @@
         <script src="js/wow.min.js"></script>
         <!-- theme custom scripts -->
         <script src="js/main.js"></script>
+        <!-- Languages script -->
+        <script src="js/languages.js"></script>
         <!-- script -->
         <script src="js/script.js"></script>
     </body>

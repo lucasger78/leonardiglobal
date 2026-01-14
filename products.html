@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
     <head>
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -94,11 +94,11 @@
                     <!-- main nav -->
                     <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
                         <ul id="nav" class="nav navbar-nav">
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="about.html">Sobre Nosotros</a></li>
-                            <li class="current"><a href="products.html">Productos</a></li>
-                            <li><a href="blog.html">Noticias</a></li>                            
-                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="index.html" data-section="nav" data-value="inicio">Inicio</a></li>
+                            <li><a href="about.html" data-section="nav" data-value="sobre">Sobre Nosotros</a></li>
+                            <li class="current"><a href="products.html" data-section="nav" data-value="productos">Productos</a></li>
+                            <li><a href="blog.html" data-section="nav" data-value="noticias">Noticias</a></li>                            
+                            <li><a href="contact.html" data-section="nav" data-value="contacto">Contacto</a></li>
                         </ul>
                     </nav>
                     <!-- /main nav -->
@@ -132,8 +132,7 @@
         <section id="portfolio">
 
             <div class="section-title text-center wow fadeInDown title-products">
-                <h2 class="section-title">Productos</h2>    
-                <!-- <p>Tu aliado digital para un estilo de vida saludable y sostenible.</p> -->
+                <h2 class="section-title" data-section="productos" data-value="titulo">Productos</h2>    
             </div>
            <div class="section-title text-center wow fadeInDown logo-thrivanas" style="display: table; width: 100%;">                
                 <div style="display: table-row;">
@@ -143,23 +142,23 @@
                 </div>
                 <div style="display: table-row;">
                     <div style="display: table-cell;">
-                        <p class="subtitle-productos">Tu aliado digital para un estilo de vida saludable y sostenible</p>
+                        <p class="subtitle-productos" data-section="productos" data-value="subtitulo">Tu aliado digital para un estilo de vida saludable y sostenible</p>
                     </div>
                 </div>
             </div>
             
             <nav class="project-filter clearfix text-center wow fadeInLeft"  data-wow-delay="0.5s">
                 <ul class="list-inline">
-                    <li><a href="javascript:;" class="filter" data-filter="all">Todos</a></li>
-                    <li><a href="javascript:;" class="filter" data-filter=".detox">Detox</a></li>
-                    <li><a href="javascript:;" class="filter" data-filter=".saciedad">Saciedad</a></li>
-                    <li><a href="javascript:;" class="filter" data-filter=".energia">Energía</a></li>
-                    <li><a href="javascript:;" class="filter" data-filter=".pausa">Pausa</a></li>
-                    <li><a href="javascript:;" class="filter" data-filter=".performance">Performance</a></li>
-                    <li><a href="javascript:;" class="filter" data-filter=".digestivo">Digestivo</a></li>
-                    <li><a href="javascript:;" class="filter" data-filter=".glow">Glow</a></li>
-                    <li><a href="javascript:;" class="filter" data-filter=".familiar">Familiar</a></li>
-                    <li><a href="javascript:;" class="filter" data-filter=".premium">Premium</a></li>
+                    <li><a href="javascript:;" class="filter" data-filter="all" data-section="productos" data-value="filtro-todos">Todos</a></li>
+                    <li><a href="javascript:;" class="filter" data-filter=".detox" data-section="productos" data-value="filtro-detox">Detox</a></li>
+                    <li><a href="javascript:;" class="filter" data-filter=".saciedad" data-section="productos" data-value="filtro-saciedad">Saciedad</a></li>
+                    <li><a href="javascript:;" class="filter" data-filter=".energia" data-section="productos" data-value="filtro-energia">Energía</a></li>
+                    <li><a href="javascript:;" class="filter" data-filter=".pausa" data-section="productos" data-value="filtro-pausa">Pausa</a></li>
+                    <li><a href="javascript:;" class="filter" data-filter=".performance" data-section="productos" data-value="filtro-performance">Performance</a></li>
+                    <li><a href="javascript:;" class="filter" data-filter=".digestivo" data-section="productos" data-value="filtro-digestivo">Digestivo</a></li>
+                    <li><a href="javascript:;" class="filter" data-filter=".glow" data-section="productos" data-value="filtro-glow">Glow</a></li>
+                    <li><a href="javascript:;" class="filter" data-filter=".familiar" data-section="productos" data-value="filtro-familiar">Familiar</a></li>
+                    <li><a href="javascript:;" class="filter" data-filter=".premium" data-section="productos" data-value="filtro-premium">Premium</a></li>
                 </ul>
             </nav>
 
@@ -170,11 +169,10 @@
                     <!-- Elemento 1: Detox -->
                     <figure class="mix portfolio-item detox">
                         <img class="img-responsive" src="img/products/product-1.jpg" alt="Portfolio Item">
-                        <!-- Cambia el href para apuntar al modal de texto -->
                         <a href="#modal-detox" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                         <figcaption class="mask">
                             <h3>Thrivanas</h3>
-                            <span>Detox</span>
+                            <span data-section="productos" data-value="filtro-detox">Detox</span>
                         </figcaption>
                     </figure>
 
@@ -184,7 +182,7 @@
                         <a href="#modal-saciedad" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                         <figcaption class="mask">
                             <h3>Thrivanas</h3>
-                            <span>Saciedad</span>
+                            <span data-section="productos" data-value="filtro-saciedad">Saciedad</span>
                         </figcaption>
                     </figure>
 
@@ -194,7 +192,7 @@
                         <a href="#modal-energia" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                         <figcaption class="mask">
                             <h3>Thrivanas</h3>
-                            <span>Energía</span>
+                            <span data-section="productos" data-value="filtro-energia">Energía</span>
                         </figcaption>
                     </figure>
 
@@ -204,7 +202,7 @@
                         <a href="#modal-pausa" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                         <figcaption class="mask">
                             <h3>Thrivanas</h3>
-                            <span>Pausa</span>
+                            <span data-section="productos" data-value="filtro-pausa">Pausa</span>
                         </figcaption>
                     </figure>
 
@@ -214,7 +212,7 @@
                         <a href="#modal-performance" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                         <figcaption class="mask">
                             <h3>Thrivanas</h3>
-                            <span>Performance</span>
+                            <span data-section="productos" data-value="filtro-performance">Performance</span>
                         </figcaption>
                     </figure>
 
@@ -224,7 +222,7 @@
                         <a href="#modal-digestivo" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                         <figcaption class="mask">
                             <h3>Thrivanas</h3>
-                            <span>Digestivo</span>
+                            <span data-section="productos" data-value="filtro-digestivo">Digestivo</span>
                         </figcaption>
                     </figure>
 
@@ -234,7 +232,7 @@
                         <a href="#modal-glow" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                         <figcaption class="mask">
                             <h3>Thrivanas</h3>
-                            <span>Glow</span>
+                            <span data-section="productos" data-value="filtro-glow">Glow</span>
                         </figcaption>
                     </figure>
 
@@ -244,7 +242,7 @@
                         <a href="#modal-familiar" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                         <figcaption class="mask">
                             <h3>Thrivanas</h3>
-                            <span>Familiar</span>
+                            <span data-section="productos" data-value="filtro-familiar">Familiar</span>
                         </figcaption>
                     </figure>
 
@@ -254,134 +252,125 @@
                         <a href="#modal-premium" rel="portfolio" class="fancybox"><span class="plus"></span></a>
                         <figcaption class="mask">
                             <h3>Thrivanas</h3>
-                            <span>Premium</span>
+                            <span data-section="productos" data-value="filtro-premium">Premium</span>
                         </figcaption>
                     </figure>
 
                 </div> <!-- end #projects -->
 
-                <!-- ============================================= -->
-                <!-- MODALES DE TEXTO (Agrégales al final de tu body) -->
-                <!-- ============================================= -->
+                <!-- MODALES DE TEXTO -->
                 <div style="display: none;">
                     
                     <!-- Modal 1: Detox -->
                     <div id="modal-detox" class="thrivana-modal">
-                        <h2>DETOX</h2>
+                        <h2 data-section="productos" data-value="modal-detox-titulo">DETOX</h2>
                         <div class="modal-content">
-                            <p><strong>Pure reset natural</strong></p>
-                            <p>
+                            <p><strong data-section="productos" data-value="modal-detox-subtitulo">Pure reset natural</strong></p>
+                            <p data-section="productos" data-value="modal-detox-parrafo">
                                 Renová tu energía desde adentro con un pack creado para acompañar procesos naturales de depuración. Ingredientes nobles, infusiones funcionales y snacks livianos que ayudan a desinflamar, equilibrar la digestión y recuperar la liviandad que tu cuerpo necesita. Ideal para reiniciar hábitos o iniciar un camino más consciente.
                             </p>
-                            <p><strong>Uso recomendado:</strong> 1 sobre al día en ayunas durante 30 días.</p>
+                            <p><strong data-section="productos" data-value="modal-detox-uso">Uso recomendado: 1 sobre al día en ayunas durante 30 días.</strong></p>
                         </div>
                     </div>
                     
                     <!-- Modal 2: Saciedad -->
                     <div id="modal-saciedad" class="thrivana-modal">
-                        <h2>SACIEDAD CONSCIENTE</h2>
+                        <h2 data-section="productos" data-value="modal-saciedad-titulo">SACIEDAD CONSCIENTE</h2>
                         <div class="modal-content">
-                            <p><strong>Control natural del apetito</strong></p>
-                            <p>
+                            <p><strong data-section="productos" data-value="modal-saciedad-subtitulo">Control natural del apetito</strong></p>
+                            <p data-section="productos" data-value="modal-saciedad-parrafo">
                                 Si buscás mantener el hambre a raya sin pasar privaciones, este pack es para vos. Ingredientes ricos en fibra, proteínas vegetales y grasas saludables que prolongan la saciedad, estabilizan la energía y reducen los antojos. Ideal para quienes buscan regular la ansiedad o acompañar ayuno intermitente.
                             </p>
-                            <p><strong>Uso recomendado:</strong> 1 cápsula 30 minutos antes de las comidas principales.</p>
+                            <p><strong data-section="productos" data-value="modal-saciedad-uso">Uso recomendado: 1 cápsula 30 minutos antes de las comidas principales.</strong></p>
                         </div>
                     </div>
                     
                     <!-- Modal 3: Energía -->
                     <div id="modal-energia" class="thrivana-modal">
-                        <h2>ENERGÍA NATURAL</h2>
+                        <h2 data-section="productos" data-value="modal-energia-titulo">ENERGÍA NATURAL</h2>
                         <div class="modal-content">
-                            <p><strong>Potencia tu día</strong></p>
-                            <p>
+                            <p><strong data-section="productos" data-value="modal-energia-subtitulo">Potencia tu día</strong></p>
+                            <p data-section="productos" data-value="modal-energia-parrafo">
                                 Para días exigentes o rutinas activas. Este pack combina yerbas premium, superalimentos y snacks funcionales que aumentan la vitalidad de forma equilibrada, sin picos ni bajones. Ideal para estudiantes, profesionales, deportistas y quienes necesitan energía real, limpia y sostenida.
                             </p>
-                            <p><strong>Uso recomendado:</strong> 1 cápsula por la mañana o antes del entrenamiento.</p>
+                            <p><strong data-section="productos" data-value="modal-energia-uso">Uso recomendado: 1 cápsula por la mañana o antes del entrenamiento.</strong></p>
                         </div>
                     </div>
                     
                     <!-- Modal 4: Pausa -->
                     <div id="modal-pausa" class="thrivana-modal">
-                        <h2>BIENESTAR & PAUSA</h2>
+                        <h2 data-section="productos" data-value="modal-pausa-titulo">BIENESTAR & PAUSA</h2>
                         <div class="modal-content">
-                            <p><strong>Tu momento</strong></p>
-                            <p>
+                            <p><strong data-section="productos" data-value="modal-pausa-subtitulo">Tu momento</strong></p>
+                            <p data-section="productos" data-value="modal-pausa-parrafo">
                                 Un kit creado para quienes buscan momentos de calma en medio del ritmo diario. Infusiones que relajan, sabores que reconfortan y alimentos suaves que invitan a bajar un cambio. Perfecto para rituales de autocuidado, pausas conscientes y descanso profundo.
                             </p>
-                            <p><strong>Uso recomendado:</strong> 1 cápsula 30 minutos antes de dormir.</p>
+                            <p><strong data-section="productos" data-value="modal-pausa-uso">Uso recomendado: 1 cápsula 30 minutos antes de dormir.</strong></p>
                         </div>
                     </div>
                     
                     <!-- Modal 5: Performance -->
                     <div id="modal-performance" class="thrivana-modal">
-                        <h2>PERFORMANCE ACTIVA</h2>
+                        <h2 data-section="productos" data-value="modal-performance-titulo">PERFORMANCE ACTIVA</h2>
                         <div class="modal-content">
-                            <p><strong>Rendí más, recuperate mejor</strong></p>
-                            <p>
+                            <p><strong data-section="productos" data-value="modal-performance-subtitulo">Rendí más, recuperate mejor</strong></p>
+                            <p data-section="productos" data-value="modal-performance-parrafo">
                                 Ideal para quienes entrenan o practican deportes recreativos. Favorece energía sostenida, recuperación muscular y rendimiento natural gracias a snacks proteicos, yerbas equilibradas e infusiones antiinflamatorias. El aliado perfecto para tu actividad física.
                             </p>
-                            <p><strong>Uso recomendado:</strong> 2 cápsulas antes y después del entrenamiento.</p>
+                            <p><strong data-section="productos" data-value="modal-performance-uso">Uso recomendado: 2 cápsulas antes y después del entrenamiento.</strong></p>
                         </div>
                     </div>
                     
                     <!-- Modal 6: Digestivo -->
                     <div id="modal-digestivo" class="thrivana-modal">
-                        <h2>CUIDADO DIGESTIVO</h2>
+                        <h2 data-section="productos" data-value="modal-digestivo-titulo">CUIDADO DIGESTIVO</h2>
                         <div class="modal-content">
-                            <p><strong>Ligereza real</strong></p>
-                            <p>
+                            <p><strong data-section="productos" data-value="modal-digestivo-subtitulo">Ligereza real</strong></p>
+                            <p data-section="productos" data-value="modal-digestivo-parrafo">
                                 Un pack pensado para quienes buscan armonizar su digestión. Mezclas suaves, yerbas equilibradas y snacks livianos que ayudan a reducir la inflamación, mejorar la digestión y acompañar un tracto digestivo sensible. Ideal para uso diario.
                             </p>
-                            <p><strong>Uso recomendado:</strong> 1 cápsula con cada comida principal.</p>
+                            <p><strong data-section="productos" data-value="modal-digestivo-uso">Uso recomendado: 1 cápsula con cada comida principal.</strong></p>
                         </div>
                     </div>
                     
                     <!-- Modal 7: Glow -->
                     <div id="modal-glow" class="thrivana-modal">
-                        <h2>BELLEZA INTERNA</h2>
+                        <h2 data-section="productos" data-value="modal-glow-titulo">BELLEZA INTERNA</h2>
                         <div class="modal-content">
-                            <p><strong>Glow desde adentro</strong></p>
-                            <P>
+                            <p><strong data-section="productos" data-value="modal-glow-subtitulo">Glow desde adentro</strong></p>
+                            <p data-section="productos" data-value="modal-glow-parrafo">
                                 La belleza empieza en lo que consumimos. Este pack combina antioxidantes, infusiones vibrantes y superalimentos que nutren desde adentro, apoyando piel, cabello y bienestar hormonal. Ideal para quienes quieren un glow natural y sostenido.
-                            </P>
-                            <p><strong>Uso recomendado:</strong> 1 cápsula diaria con el desayuno.</p>
+                            </p>
+                            <p><strong data-section="productos" data-value="modal-glow-uso">Uso recomendado: 1 cápsula diaria con el desayuno.</strong></p>
                         </div>
                     </div>
                     
                     <!-- Modal 8: Familiar -->
                     <div id="modal-familiar" class="thrivana-modal">
-                        <h2>FAMILIAR SALUDABLE</h2>
+                        <h2 data-section="productos" data-value="modal-familiar-titulo">FAMILIAR SALUDABLE</h2>
                         <div class="modal-content">
-                            <p><strong>Cambiá hábitos en casa</strong></p>
-                            <P>
+                            <p><strong data-section="productos" data-value="modal-familiar-subtitulo">Cambiá hábitos en casa</strong></p>
+                            <p data-section="productos" data-value="modal-familiar-parrafo">
                                 El pack perfecto para hogares que buscan reemplazar snacks procesados por opciones más naturales y ricas. Productos variados, aptos para todas las edades y pensados para mejorar hábitos sin complicaciones. Ideal para meriendas, escuela y momentos en familia.
-                            </P>
-                            <p><strong>Uso recomendado:</strong> 1 cápsula diaria para adultos, ½ cápsula para niños mayores de 6 años.</p>
+                            </p>
+                            <p><strong data-section="productos" data-value="modal-familiar-uso">Uso recomendado: 1 cápsula diaria para adultos, ½ cápsula para niños mayores de 6 años.</strong></p>
                         </div>
                     </div>
                     
                     <!-- Modal 9: Premium -->
                     <div id="modal-premium" class="thrivana-modal">
-                        <h2>VIDA NATURAL</h2>
+                        <h2 data-section="productos" data-value="modal-premium-titulo">VIDA NATURAL</h2>
                         <div class="modal-content">
-                            <p><strong>Tu estilo en alimentos</strong> <i>(Pack Premium)</i></p>
-                            <p>
+                            <p><strong data-section="productos" data-value="modal-premium-subtitulo">Tu estilo en alimentos</strong> <i>(Pack Premium)</i></p>
+                            <p data-section="productos" data-value="modal-premium-parrafo">
                                 El pack que refleja un estilo de vida. Para quienes buscan alimentos premium, orgánicos y de origen responsable que acompañan hábitos conscientes. Una selección equilibrada y curada para vivir en armonía con lo que consumís
                             </p>
-                            <p><strong>Uso recomendado:</strong> 1 cápsula dos veces al día con las comidas.</p>
+                            <p><strong data-section="productos" data-value="modal-premium-uso">Uso recomendado: 1 cápsula dos veces al día con las comidas.</strong></p>
                         </div>
                     </div>
 
                 </div>
                 <!-- Fin de los modales de texto -->
-
-
-
-
-
-
-
 
             </div> <!-- end #projects -->
 
@@ -402,7 +391,7 @@
                         </div>
 
                         <div class="footer-social wow fadeInUp">
-                            <h3>Encuéntranos</h3>
+                            <h3 data-section="footer" data-value="encuentranos">Encuéntranos</h3>
                             <ul class="text-center list-inline">
                                 <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram fa-lg"></i></a></li>
@@ -412,7 +401,7 @@
 
                         <div class="copyright">
                            
-                            <p>Todos los derechos reservados <a href="http://leonardiglobal.com">leonardiglobal.com</a> Developed by <a target="_blank" href="http://www.lucasconti.netlify.app">Lucas Conti</a></p>
+                            <p data-section="footer" data-value="derechos">Todos los derechos reservados <a href="http://leonardiglobal.com">leonardiglobal.com</a> Developed by <a target="_blank" href="http://www.lucasconti.netlify.app">Lucas Conti</a></p>
                         </div>
 
                     </div>
@@ -450,6 +439,8 @@
         <script src="js/wow.min.js"></script>
         <!-- theme custom scripts -->
         <script src="js/main.js"></script>
+        <!-- Languages script -->
+        <script src="js/languages.js"></script>
         <!-- script -->
         <script src="js/script.js"></script>
     </body>

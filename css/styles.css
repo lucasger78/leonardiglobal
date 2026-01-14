@@ -6,6 +6,7 @@
     font-size: 1.2em;
     color: #e0e0e0;
     margin-bottom: 10px;
+    /* margin-top: 5px; */
 }
 
 .latin-carousel {
@@ -81,6 +82,13 @@
   color: #333232;
 }
 
+.h3-proposito {
+
+  color:#0584ce;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
 
 .border-about-rectangle {
   /* border: 1px dotted rgb(255, 255, 255);
@@ -279,6 +287,7 @@
 .latin-trad{
     font-size: 0.6em;
     color: #dcdcdc;
+    /* margin-bottom: 30px !important; */
 }
 
 .subtitle-productos{
@@ -437,7 +446,8 @@
 	justify-content: space-between;
 	position:fixed;
 	top: 30px;
-	right: 100px;
+	right: 30px;
+  /* margin-left: 150px; */
 	padding-right: 10px;
 		
 }
@@ -483,5 +493,13 @@
 	cursor: pointer;
 	
 }
+
+/* NUEVO: estado activo (cuando se clickea) */
+.flags-es.active,
+.flags-por.active,
+.flags-gb.active {
+  filter: grayscale(0%);
+}
+
 
 
