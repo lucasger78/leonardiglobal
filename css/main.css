@@ -446,6 +446,46 @@ width: 11px;
   line-height: 24px;
 }
 
+#service .media {
+    min-height: 200px; /* Altura mínima consistente */
+    margin-bottom: 30px;
+}
+
+#service .media-body h3 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+}
+
+#service .media-body p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Asegurar que las columnas tengan la misma altura */
+#service .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#service .col-md-6 {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#service .col-md-6 .media {
+    width: 100%;
+}
+
+/* Para pantallas móviles */
+@media (max-width: 768px) {
+    #service .col-md-6 {
+        display: block;
+    }
+}
+
+
+
 
 /*============================================================
     Service Bottom
