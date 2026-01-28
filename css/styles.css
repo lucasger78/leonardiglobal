@@ -307,7 +307,7 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .about-us-img {
@@ -319,6 +319,7 @@
   max-width: 90%;
   height: auto;
   margin-bottom: 40px;
+  border-radius: 15px;
 }
 
 .about-text {
@@ -331,13 +332,46 @@
   padding: 30px;
   box-sizing: border-box;
   box-shadow: 0px 0px 10px rgba(5, 132, 206, 0.8);
+  border-radius: 10px;
 }
 
-/* .about-text:hover {
+.about-btn {
+  flex: none !important; 
+  display: block !important; 
+  width: 100% !important; 
+  max-width: 700px !important;
+  text-align: center !important; /* ← fuerza alineación */
+  background-color: #0584ce;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px rgba(5, 132, 206, 0.8);
+  border-radius: 5px;
+}
+
+.about-btn:hover {
   transform: translateY(-6px); 
   box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.4); 
   border: 1px dotted rgb(255, 255, 255);
-} */
+}
+
+.btn-about{
+  display: block !important;
+  width: 100% !important;
+  max-width: 400px !important;
+  margin-top: 20px !important;
+  text-align: center !important;  
+  text-transform: uppercase !important;font-weight: 600 !important;
+}
+
+.about-right-side {
+    flex: 1 1 400px;
+    max-width: 700px !important;
+    display: flex;
+    flex-direction: column; /* Alinea texto y botón uno arriba del otro */
+    align-items: center; /* Alinea el botón al centro */
+}
 
 .h3-about {
   font-size: 30px;
@@ -368,6 +402,11 @@
   text-align: left;
 }
 
+.p-ejes, .last-line-about {
+  line-height: 1.6 !important;
+  margin-bottom: 8px !important;
+  text-align: left !important;
+}
 
 /* WHATSAPP */
 
