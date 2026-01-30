@@ -84,7 +84,7 @@
 
 .h3-proposito {
 
-  color:#0584ce;
+  color:#2E4A5A;
   font-weight: bolder;
   text-transform: uppercase;
   font-size: 3rem;
@@ -122,8 +122,8 @@
 
 .tst-single:hover {
   transform: translateY(-6px); 
-  box-shadow: inset 0 0 10px rgba(5, 132, 206, 0.4); 
-  border: 1px dotted rgb(5, 132, 206);
+  box-shadow: inset 0 0 10px rgba(46, 74, 90, 0.7); 
+  border: 1px dotted #2E4A5A;
 }
 
 .tst-item {
@@ -151,8 +151,8 @@
 
 .tst-single:hover {
   transform: translateY(-6px);
-  box-shadow: inset 0 0 10px rgba(5, 132, 206, 0.4);
-  border: 1px dotted rgb(5, 132, 206);
+  box-shadow: inset 0 0 10px rgba(46, 74, 90, 0.7); 
+  border: 1px dotted #2E4A5A;
 }
 
 .tst-single img {
@@ -236,7 +236,7 @@
 .thrivana-modal {
     padding: 30px;
     max-width: 600px;
-    background: #0584ce;
+    background: #2E4A5A;
     border-radius: 2px;
     position: relative;
 }
@@ -268,7 +268,7 @@
 }
 .thrivana-modal li:before {
     content: "✓";
-    color: #0584ce;
+    color: #2E4A5A;
     font-weight: bold;
     margin-right: 10px;
 }
@@ -326,12 +326,12 @@
   flex: 1 1 400px;
   max-width: 700px;
   text-align: left !important; /* ← fuerza alineación */
-  background-color: #0584ce;
+  background-color: #3d4d3a;
   color: #ffffff;
   border: none;
   padding: 30px;
   box-sizing: border-box;
-  box-shadow: 0px 0px 10px rgba(5, 132, 206, 0.8);
+  box-shadow: 0px 0px 10px rgba(61, 77, 58, 0.8);
   border-radius: 10px;
 }
 
@@ -341,12 +341,12 @@
   width: 100% !important; 
   max-width: 700px !important;
   text-align: center !important; /* ← fuerza alineación */
-  background-color: #0584ce;
+  background-color: #3d4d3a;
   color: #ffffff;
   border: none;
   padding: 15px;
   box-sizing: border-box;
-  box-shadow: 0px 0px 10px rgba(5, 132, 206, 0.8);
+  box-shadow: 0px 0px 10px rgba(61, 77, 58, 0.8);
   border-radius: 5px;
 }
 
@@ -495,6 +495,7 @@
   width: 20px;
 }
 .flags-es,
+.flags-es-ct,
 .flags-por,
 .flags-gb {	
 	
@@ -507,9 +508,12 @@
   -o-transition: all 0.3s;
 }
 
+
+.flags-es-ct.hovered,
 .flags-es.hovered,
 .flags-por.hovered,
 .flags-gb.hovered,
+.flags-es-ct:hover,
 .flags-es:hover,
 .flags-por:hover,
 .flags-gb:hover {
@@ -534,6 +538,7 @@
 }
 
 /* NUEVO: estado activo (cuando se clickea) */
+.flags-es-ct.active,
 .flags-es.active,
 .flags-por.active,
 .flags-gb.active {

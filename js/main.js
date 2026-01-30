@@ -142,7 +142,7 @@ $(function () {
     if (isHomePage) {
         jQuery(window).scroll(function () {
             if (jQuery(window).scrollTop() > 400) {
-                jQuery("#navigation").css("background-color", "#0584ce");
+                jQuery("#navigation").css("background-color", "#2E4A5A");
                 jQuery("#navigation").addClass("animated-nav");
             } else {
                 jQuery("#navigation").css("background-color", "transparent");
@@ -151,7 +151,7 @@ $(function () {
         });
     } else {
         // En otras páginas, aplicar directamente el color
-        jQuery("#navigation").css("background-color", "#0584ce");
+        jQuery("#navigation").css("background-color", "#2E4A5A");
         jQuery("#navigation").addClass("animated-nav");
     }
 

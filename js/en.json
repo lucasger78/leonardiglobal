@@ -37,9 +37,9 @@
     "frase-4": "(With love for nature and self-care – thus one lives well and prospers greatly.)"
   },
   "about": {
-    "titulo": "About Us",
-    "subtitulo": "We curate what the world consumes",
-    "parrafo-1": "At Leonardi Global S.L. we believe that every product can change the world.<br>Our mission is to introduce to the market only goods that combine health, sustainability, and ethics.<br>Each item we select represents an investment in people's wellbeing and the planet's future."
+    "titulo": "We curate what the world consumes",
+    "parrafo": "At Leonardi Global S.L. we believe that each product can change the world.<br>Our mission is to introduce to the market only goods that combine health, sustainability and ethics.<br>Each item we select represents an investment in people's wellbeing and in the planet's future.",
+    "btn-productos": "Discover our products"
   },
   "proposito": {
     "titulo": "Our Purpose",
@@ -136,6 +136,6 @@
   },
   "footer": {
     "encuentranos": "Find Us",
-    "derechos": "All rights reserved"
+    "derechos": "All rights reserved <a href='http://leonardiglobal.com'>leonardiglobal.com</a> Developed by <a target='_blank' href='http://www.lucasconti.netlify.app'>Lucas Conti</a>"
   }
 }

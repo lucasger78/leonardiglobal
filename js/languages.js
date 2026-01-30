@@ -30,8 +30,8 @@ const loadLanguage = () => {
   if (selectedLanguage) {
     changeLanguage(selectedLanguage);
   } else {
-    // Establece un idioma predeterminado si no se ha seleccionado ninguno
-    changeLanguage("default");
+    // Establece catalán (es-ct) como idioma predeterminado
+    changeLanguage("es-ct");
   }
 };
 
@@ -42,31 +42,8 @@ flagsElement.addEventListener("click", (e) => {
 // Carga el idioma al cargar la página
 loadLanguage();
 
-// const loadLanguage = async () => {
-//   // Verificar si el idioma seleccionado ya está almacenado en el almacenamiento local del navegador
-//   const selectedLanguage = localStorage.getItem("selectedLanguage");
-
-//   if (selectedLanguage) {
-//     changeLanguage(selectedLanguage);
-//   } else {
-//     // Cargar el archivo "es.json" y almacenar su contenido en el almacenamiento local
-//     const response = await fetch("es.json");
-//     const languageData = await response.json();
-//     localStorage.setItem("selectedLanguage", JSON.stringify(languageData));
-//     changeLanguage(languageData);
-//   }
-// };
-
-// flagsElement.addEventListener("click", (e) => {
-//   changeLanguage(e.target.parentElement.dataset.language);
-// });
-
-// // Cargar el idioma al cargar la página
-// loadLanguage();
-
 // Selecciona todas las banderas
-// Selecciona todas las banderas
-const flags = document.querySelectorAll('.flags-es, .flags-por, .flags-gb');
+const flags = document.querySelectorAll('.flags-es-ct, .flags-es, .flags-por, .flags-gb');
 
 // Función para activar la bandera correcta
 const activateFlag = (language) => {
@@ -74,6 +51,7 @@ const activateFlag = (language) => {
   
   // Encuentra la bandera correspondiente al idioma
   const flagToActivate = document.querySelector(
+    language === 'es-ct' ? '.flags-es-ct' :
     language === 'es' ? '.flags-es' :
     language === 'por' ? '.flags-por' :
     '.flags-gb'
@@ -84,8 +62,8 @@ const activateFlag = (language) => {
   }
 };
 
-// Al cargar la página, activa la bandera del idioma guardado
-const savedLanguage = localStorage.getItem("selectedLanguage") || "es";
+// Al cargar la página, activa la bandera del idioma guardado (por defecto catalán)
+const savedLanguage = localStorage.getItem("selectedLanguage") || "es-ct";
 activateFlag(savedLanguage);
 
 // Al hacer click en una bandera
@@ -102,4 +80,3 @@ flags.forEach(flag => {
     // Ya no es necesario guardar aquí porque changeLanguage() lo hace
   });
 });
-

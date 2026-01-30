@@ -33,9 +33,9 @@
     "frase-4": "(Com amor pela natureza e cuidado de si mesmo – assim se vive bem e prospera largamente.)"
   },
   "about": {
-    "titulo": "Sobre Nós",
-    "subtitulo": "Curamos o que o mundo consome",
-    "parrafo-1": "Na Leonardi Global S.L. acreditamos que cada produto pode mudar o mundo.<br>A nossa missão é introduzir no mercado apenas bens que combinam saúde, sustentabilidade e ética.<br>Cada artigo que selecionamos representa um investimento no bem-estar das pessoas e no futuro do planeta."
+    "titulo": "Curamos o que o mundo consome",
+    "parrafo": "Na Leonardi Global S.L. acreditamos que cada produto pode mudar o mundo.<br>A nossa missão é introduzir no mercado apenas bens que combinam saúde, sustentabilidade e ética.<br>Cada artigo que selecionamos representa um investimento no bem-estar das pessoas e no futuro do planeta.",
+    "btn-productos": "Conheça os nossos produtos"
   },
   "proposito": {
     "titulo": "O Nosso Propósito",
@@ -132,6 +132,6 @@
   },
   "footer": {
     "encuentranos": "Encontra-nos",
-    "derechos": "Todos os direitos reservados"
+    "derechos": "Todos os direitos reservados <a href='http://leonardiglobal.com'>leonardiglobal.com</a> Desenvolvido por <a target='_blank' href='http://www.lucasconti.netlify.app'>Lucas Conti</a>"
   }
 }
