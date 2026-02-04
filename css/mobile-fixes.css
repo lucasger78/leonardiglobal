@@ -320,7 +320,7 @@
         height: 100px !important;
         padding: 0 !important;
         padding-bottom: 5px !important;
-        background: #2c5f4f !important;
+        background: rgba(46, 74, 90, 0.95) !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-between !important;
@@ -336,7 +336,14 @@
     .btn-leer-mas {
         font-size: 11px !important;
         padding: 6px 10px !important;
-       
+        background: #3e4532;
+        color: white;
+    }
+
+    .btn-leer-mas:hover {
+        background: #ffffff;
+        color: #3e4532;
+        /* transform: scale(1.08); */
     }
 }
 
