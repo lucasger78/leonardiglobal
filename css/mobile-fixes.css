@@ -301,8 +301,8 @@
     /* SLIDES CUADRADOS 280x280 */
     .slide {
         flex: 0 0 280px !important;
-        width: 280px !important;
-        height: 280px !important;
+        width: auto !important;
+        height: auto !important;
         min-width: 280px !important;
         scroll-snap-align: center !important;
         border-radius: 8px !important;
@@ -312,13 +312,14 @@
     
     .slide img {
         width: 100% !important;
-        height: 180px !important;
+        height: auto !important;
         object-fit: cover !important;
     }
     
     .slide-overlay {
         height: 100px !important;
-        padding: 12px !important;
+        padding: 0 !important;
+        padding-bottom: 5px !important;
         background: #2c5f4f !important;
         display: flex !important;
         flex-direction: column !important;
@@ -334,7 +335,8 @@
     
     .btn-leer-mas {
         font-size: 11px !important;
-        padding: 6px 12px !important;
+        padding: 6px 10px !important;
+       
     }
 }
 
