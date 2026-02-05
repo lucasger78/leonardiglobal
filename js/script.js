@@ -43,19 +43,19 @@ $(document).ready(function() {
         openSpeed: 300,
         closeEffect: 'fade',
         closeSpeed: 200,
-        closeBtn: true,
-        closeClick: false,
-        tpl: {
-            closeBtn: '<a title="Close" class="fancybox-item fancybox-close" href="javascript:;"></a>'
-        },
         helpers: {
             overlay: {
                 closeClick: false
             }
         },
-        beforeShow: function() {
-            // Forzar que el botón de cierre sea visible
-            $('.fancybox-close').show();
+        afterShow: function() {
+            // Agregar botón de cierre solo en mobile si no existe
+            if (window.innerWidth <= 768 && !$('.custom-close-btn').length) {
+                $('.fancybox-skin').append('<button class="custom-close-btn">×</button>');
+                $('.custom-close-btn').on('click', function() {
+                    $.fancybox.close();
+                });
+            }
         }
     });
 });
