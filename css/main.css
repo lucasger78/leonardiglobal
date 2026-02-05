@@ -1007,7 +1007,7 @@ img.img-circle {
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
-    background-color: #3d4d3a; /* ejemplo de verde oscuro */
+    background-color: #3d4d3a; 
     padding: 20px;
     padding-bottom: 10px;
     width: 100%;
@@ -1017,7 +1017,6 @@ img.img-circle {
 .logo-thrivanas img {
     width: 700px;
     max-width: 100%;
-   /*  height: auto; */
 }
 
 /*=================================

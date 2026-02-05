@@ -293,9 +293,16 @@
     }
     
     /* Texto debajo del logo */
-    .logo-thrivanas h2,
+    /* .logo-thrivanas h2,
     .logo-thrivanas h3,
     .logo-thrivanas p {
+        width: 100% !important;
+        text-align: center !important;
+        margin: 10px 0 !important;
+        display: block !important;
+    } */
+
+    .subtitle-productos{
         width: 100% !important;
         text-align: center !important;
         margin: 10px 0 !important;
