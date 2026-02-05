@@ -43,11 +43,19 @@ $(document).ready(function() {
         openSpeed: 300,
         closeEffect: 'fade',
         closeSpeed: 200,
-        closeBtn: true,  // Asegura que el botón de cierre esté habilitado
+        closeBtn: true,
+        closeClick: false,
+        tpl: {
+            closeBtn: '<a title="Close" class="fancybox-item fancybox-close" href="javascript:;"></a>'
+        },
         helpers: {
             overlay: {
                 closeClick: false
             }
+        },
+        beforeShow: function() {
+            // Forzar que el botón de cierre sea visible
+            $('.fancybox-close').show();
         }
     });
 });
