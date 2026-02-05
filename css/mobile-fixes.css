@@ -555,8 +555,9 @@
         right: -10px;
         width: 30px;
         height: 30px;
-        background: #000;
-        border: none;
+        background: #3e4532;
+        border-color: #fff;
+        /* border: none; */
         border-radius: 50%;
         color: #fff;
         font-size: 24px;
