@@ -1003,18 +1003,21 @@ img.img-circle {
 
 .logo-thrivanas {
     display: flex;
-    margin-top: 0px;
+    margin-top: -20px;
+    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
     background-color: #3d4d3a; /* ejemplo de verde oscuro */
     padding: 20px;
+    padding-bottom: 10px;
     width: 100%;
+    
 }
 
 .logo-thrivanas img {
     width: 700px;
     max-width: 100%;
-    height: auto;
+   /*  height: auto; */
 }
 
 /*=================================

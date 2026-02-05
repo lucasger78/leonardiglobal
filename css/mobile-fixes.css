@@ -240,17 +240,36 @@
 /* 5. PRODUCTOS */
 @media (max-width: 767px) {
     /* Logo Thrivanas */
-    .logo-thrivanas {
+    /* .logo-thrivanas {
         text-align: center !important;
         padding: 30px 0 !important;
-    }
+    } */
     
-    .logo-thrivanas img {
+    /* .logo-thrivanas img {
         max-width: 110% !important;
         height: 80px !important;
         margin: 0 auto !important;
         display: block !important;
+    } */
+
+    .logo-thrivanas {
+    display: flex;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d4d3a; 
+    padding: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    
     }
+
+    .logo-thrivanas img {
+        width: 700px;
+        max-width: 100%;
+    }
+
     
     /* Productos centrados */
     #portfolio .container {
