@@ -288,19 +288,19 @@
         width: 100% !important;
         max-width: 320px !important;
         height: auto !important;
-        margin: 0 auto 20px auto !important;
+        margin: 0 auto !important;
         display: block !important;
     }
     
     /* Texto debajo del logo */
-    /* .logo-thrivanas h2,
+    .logo-thrivanas h2,
     .logo-thrivanas h3,
     .logo-thrivanas p {
         width: 100% !important;
         text-align: center !important;
         margin: 10px 0 !important;
         display: block !important;
-    } */
+    }
 
     .subtitle-productos{
         width: 100% !important;
