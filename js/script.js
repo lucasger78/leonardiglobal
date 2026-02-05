@@ -9,6 +9,28 @@ const phrases = document.querySelectorAll('.latin-p');
 
 
   // Función para mostrar el modal
+// $(document).ready(function() {
+//     $(".fancybox").fancybox({
+//         padding: 0,
+//         margin: 20,
+//         autoSize: true,
+//         autoCenter: true,
+//         fitToView: true,
+//         scrolling: 'no',
+//         openEffect: 'fade',
+//         openSpeed: 300,
+//         closeEffect: 'fade',
+//         closeSpeed: 200,
+//         helpers: {
+//             overlay: {
+//                 closeClick: false
+//             }
+//         }
+//     });
+// });
+
+
+
 $(document).ready(function() {
     $(".fancybox").fancybox({
         padding: 0,
@@ -21,6 +43,7 @@ $(document).ready(function() {
         openSpeed: 300,
         closeEffect: 'fade',
         closeSpeed: 200,
+        closeBtn: true,  // Asegura que el botón de cierre esté habilitado
         helpers: {
             overlay: {
                 closeClick: false
