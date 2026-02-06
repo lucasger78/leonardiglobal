@@ -241,6 +241,16 @@
     padding: 0 40px; /* Espacio para las flechas */
 }
 
+.slick-prev, .slick-next {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    display: none !important;
+}
+
 /* Estilos base para las flechas */
 .slick-prev, .slick-next {
     position: absolute;
@@ -271,12 +281,12 @@
 
 /* Posición de la flecha izquierda */
 .slick-prev {
-    left: 0;
+    left: 10px !important;
 }
 
 /* Posición de la flecha derecha */
 .slick-next {
-    right: 0;
+    right: 10px !important;
 }
 
 /* Íconos de las flechas */

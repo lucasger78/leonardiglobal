@@ -48,8 +48,8 @@
 .border-about-rectangle {
   /* border: 1px dotted rgb(255, 255, 255);
   box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.3); */
-  width: 200% !important;
-  margin-left: -200px !important; 
+  width: 100% !important;
+  margin-left: 0 !important; 
   /* display: inline-block; 
    padding: 10px 20px;
     
@@ -106,11 +106,20 @@
   box-sizing: border-box;
   text-align: center; 
 } */
-.text-about-top {
+/* .text-about-top {
   font-size: 1.8rem !important;
   padding-left: 50px !important;
   padding-right: 20px !important;
   display: block;
+} */
+
+.text-about-top {
+  font-size: 1.8rem !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  display: block;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
 
 .tst-single {
