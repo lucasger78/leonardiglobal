@@ -78,10 +78,11 @@
   "blog": {
     "titulo": "News",
     "subtitulo": "From the Earth - Stories that Inspire.",
-    "noticia-1": "What conscious eating means",
-    "noticia-2": "From producer to consumer",
-    "noticia-3": "Trends in sustainable consumption",
-    "noticia-4": "Interviews with producers",
+    "noticia-1": "Tarragona bets on the future: small farmers regenerate the soil to fight climate change",
+    "noticia-2": "MMore than nuts: families in Tarragona revive the tradition of artisanal roasting.",
+    "noticia-3": "Five generations united by the vineyard: the secret behind Tarragona’s small-scale wines.",
+    "noticia-4": "Sustainable liquid gold: small producers in Tarragona harvest award-winning olive oil while respecting the environment.",
+    "noticia-5": "From field to table in minutes: the revolution of peri-urban farming revolution in Tarragona.",
     "btn-leer": "Read More"
   },
   "productos": {

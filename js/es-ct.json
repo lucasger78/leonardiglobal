@@ -78,10 +78,11 @@
   "blog": {
     "titulo": "Notícies",
     "subtitulo": "Des de la Terra - Històries que Inspiren.",
-    "noticia-1": "Què significa alimentació conscient",
-    "noticia-2": "Del productor al consumidor",
-    "noticia-3": "Tendències en consum sostenible",
-    "noticia-4": "Entrevistes amb productors",
+    "noticia-1": "Tarragona aposta pel futur: petits agricultors regeneren el sòl per combatre el canvi climàtic.",
+    "noticia-2": "Més que fruits secs: famílies de Tarragona rescaten la tradició del torrat artesanal.",
+    "noticia-3": "Cinc generacions unides per la vinya: el secret dels petits vins de Tarragona.",
+    "noticia-4": "Or líquid sostenible: petits productors de Tarragona cullen oli premiat respectant l’entorn.",
+    "noticia-5": "Del camp a taula en minuts: la revolució de l’horta periurbana a Tarragona.",
     "btn-leer": "Llegir Més"
   },
   "productos": {

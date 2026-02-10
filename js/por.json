@@ -74,10 +74,11 @@
   "blog": {
     "titulo": "Notícias",
     "subtitulo": "Desde a Terra - Histórias que Inspiram.",
-    "noticia-1": "O que significa alimentação consciente",
-    "noticia-2": "Do produtor ao consumidor",
-    "noticia-3": "Tendências no consumo sustentável",
-    "noticia-4": "Entrevistas com produtores",
+    "noticia-1": "Tarragona aposta no futuro: pequenos agricultores regeneram o solo para combater as alterações climáticas.",
+    "noticia-2": "Mais do que frutos secos: famílias de Tarragona recuperam a tradição da torrefação artesanal.",
+    "noticia-3": "Cinco gerações unidas pela vinha: o segredo dos pequenos vinhos de Tarragona.",
+    "noticia-4": "Ouro líquido sustentável: pequenos produtores de Tarragona colhem azeite premiado respeitando o ambiente.",
+    "noticia-5": "Do campo à mesa em minutos: a revolução da agricultura periurbana em Tarragona.",
     "btn-leer": "Ler Mais"
   },
   "productos": {

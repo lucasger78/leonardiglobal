@@ -78,10 +78,11 @@
   "blog": {
     "titulo": "Noticias",
     "subtitulo": "Desde la Tierra - Historias que Inspiran.",
-    "noticia-1": "Qué significa alimentación consciente",
-    "noticia-2": "Del productor al consumidor",
-    "noticia-3": "Tendencias en consumo sostenible",
-    "noticia-4": "Entrevistas con productores",
+    "noticia-1": "Tarragona apuesta por el futuro: pequeños agricultores regeneran el suelo para combatir el cambio climático",
+    "noticia-2": "Más que frutos secos: familias de Tarragona rescatan la tradición del tostado artesanal.",
+    "noticia-3": "Cinco generaciones unidas por la viña: el secreto de los pequeños vinos de Tarragona.",
+    "noticia-4": "Oro líquido sostenible: pequeños productores de Tarragona cosechan aceite premiado respetando el entorno.",
+    "noticia-5": "Del campo a la mesa en minutos: la revolución de la huerta periurbana en Tarragona.",
     "btn-leer": "Leer Más"
   },
   "productos": {
