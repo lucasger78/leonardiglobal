@@ -405,7 +405,7 @@
     }
     
     .slide-overlay {
-        height: 100px !important;
+        height: 70% !important;
         padding: 0 !important;
         padding-bottom: 5px !important;
         background: rgba(46, 74, 90, 0.95) !important;
