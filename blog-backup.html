@@ -159,7 +159,7 @@
                         <img src="img/news/news-1.jpg" alt="Alimentación consciente">
                         <div class="slide-overlay">
                             <p class="slide-title" data-section="blog" data-value="noticia-1">Tarragona apuesta por el futuro: pequeños agricultores regeneran el suelo para combatir el cambio climático</p>
-                            <a rel="portfolio" href="#modal-news-1" class="btn-leer-mas fancybox" data-section="blog" data-value="btn-leer">Leer Más</a>
+                            <a href="#modal-news-1" class="btn-leer-mas fancybox" data-section="blog" data-value="btn-leer">Leer Más</a>
                         </div>
                     </div>
                     
@@ -168,7 +168,7 @@
                         <img src="img/news/news-2.jpg" alt="Más que frutos secos">
                         <div class="slide-overlay">
                             <p class="slide-title" data-section="blog" data-value="noticia-2">Más que frutos secos: familias de Tarragona rescatan la tradición del tostado artesanal.</p>
-                            <a rel="portfolio" href="#modal-news-2" class="btn-leer-mas fancybox" data-section="blog" data-value="btn-leer">Leer Más</a>
+                            <a href="#modal-news-2" class="btn-leer-mas fancybox" data-section="blog" data-value="btn-leer">Leer Más</a>
                         </div>
                     </div>
                     
@@ -177,7 +177,7 @@
                         <img src="img/news/news-3.jpg" alt="Cinco generaciones unidas por la viña">
                         <div class="slide-overlay">
                             <p class="slide-title" data-section="blog" data-value="noticia-3">Cinco generaciones unidas por la viña: el secreto de los pequeños vinos de Tarragona.</p>
-                            <a rel="portfolio" href="#modal-news-3" class="btn-leer-mas fancybox" data-section="blog" data-value="btn-leer">Leer Más</a>
+                            <a href="#modal-news-3" class="btn-leer-mas fancybox" data-section="blog" data-value="btn-leer">Leer Más</a>
                         </div>
                     </div>
                     
@@ -186,7 +186,7 @@
                         <img src="img/news/news-4.jpg" alt="Oro líquido sostenible">
                         <div class="slide-overlay">
                             <p class="slide-title" data-section="blog" data-value="noticia-4">Oro líquido sostenible: pequeños productores de Tarragona cosechan aceite premiado respetando el entorno.</p>
-                            <a rel="portfolio" href="#modal-news-4" class="btn-leer-mas fancybox" data-section="blog" data-value="btn-leer">Leer Más</a>
+                            <a href="#modal-news-4" class="btn-leer-mas fancybox" data-section="blog" data-value="btn-leer">Leer Más</a>
                         </div>
                     </div>                    
                    
@@ -194,7 +194,7 @@
                         <img src="img/news/news-5.jpg" alt="Del campo a la mesa en minutos">
                         <div class="slide-overlay">
                             <p class="slide-title" data-section="blog" data-value="noticia-5">Del campo a la mesa en minutos: la revolución de la huerta periurbana en Tarragona.</p>
-                            <a rel="portfolio" href="#modal-news-5" class="btn-leer-mas fancybox" data-section="blog" data-value="btn-leer">Leer Más</a>
+                            <a href="#modal-news-5" class="btn-leer-mas fancybox" data-section="blog" data-value="btn-leer">Leer Más</a>
                         </div>
                     </div>
                     
@@ -204,7 +204,7 @@
                         <img src="img/news/news-1.jpg" alt="Alimentación consciente">
                         <div class="slide-overlay">
                             <p class="slide-title" data-section="blog" data-value="noticia-1">Tarragona apuesta por el futuro: pequeños agricultores regeneran el suelo para combatir el cambio climático</p>
-                            <a rel="portfolio" href="#modal-news-1" class="btn-leer-mas fancybox" data-section="blog" data-value="btn-leer">Leer Más</a>
+                            <a href="#modal-news-1" class="btn-leer-mas fancybox" data-section="blog" data-value="btn-leer">Leer Más</a>
                         </div>
                     </div>
                    
@@ -320,8 +320,6 @@
         
         <!-- main jQuery -->
         <script src="js/vendor/jquery-1.11.1.min.js"></script>
-        <!-- Slick JS (debe cargarse antes de news.js que lo inicializa) -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <!-- Bootstrap -->
         <script src="js/bootstrap.min.js"></script>
         <!-- jquery.nav -->
@@ -346,9 +344,14 @@
         <script src="js/news.js"></script>
         <!-- Languages script -->
         <script src="js/languages.js"></script>
+
         <script src="js/mobile-fixes.js"></script>
         <!-- script -->
         <script src="js/script.js"></script>
+        <!-- jQuery (necesario para Slick) -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- Slick JS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script>
             document.querySelectorAll('.slide a.overlay-link').forEach(link => {
                 const slide = link.closest('.slide');

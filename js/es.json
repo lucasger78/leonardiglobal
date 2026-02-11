@@ -85,6 +85,23 @@
     "noticia-5": "Del campo a la mesa en minutos: la revolución de la huerta periurbana en Tarragona.",
     "btn-leer": "Leer Más"
   },
+  "news": {
+    "news-1": "Tarragona apuesta por el futuro",
+    "news-1-subtitulo": "Pequeños agricultores regeneran el suelo para combatir el cambio climático",
+    "news-1-parrafo": "En el corazón de Tarragona, pequeños agricultores están revolucionando sus cultivos no solo para producir alimentos, sino para sanar la tierra. A través de técnicas regenerativas, estos productores están demostrando que es posible secuestrar carbono y revitalizar la biodiversidad local frente al cambio climático.",
+    "news-2": "Más que frutos secos",
+    "news-2-subtitulo": "Familias de Tarragona rescatan la tradición del tostado artesanal",
+    "news-2-parrafo": "A pocas semanas de finalizar la cosecha, las familias productoras de Avellana de Reus DOP defienden la tradición del tostado artesanal a fuego lento. Su objetivo es mantener vivo un sabor auténtico que se transmite de generación en generación, resistiendo a la industrialización de los frutos secos.",
+    "news-3": "Cinco generaciones unidas por la viña",
+    "news-3-subtitulo": "El secreto de los pequeños vinos de Tarragona",
+    "news-3-parrafo": "Entre muros de piedra seca y viñedos centenarios, pequeños viticultores de la comarca están recuperando variedades autóctonas casi olvidadas. Su labor no es solo elaborar vino, sino preservar el paisaje cultural de Tarragona, combinando la viña con la producción de aceite y miel familiar.",
+    "news-4": "Oro líquido sostenible",
+    "news-4-subtitulo": "Pequeños productores de Tarragona cosechan aceite premiado respetando el entorno",
+    "news-4-parrafo": "Con el compromiso de producir un aceite de oliva virgen extra de máxima calidad sin dañar el entorno, estos productores utilizan energía solar y técnicas de ahorro de agua en Mont-roig del Camp. Su aceite, con certificación ecológica, demuestra que la excelencia gourmet y la sostenibilidad pueden ir de la mano.",
+    "news-5": "Del campo a la mesa en minutos",
+    "news-5-subtitulo": "La revolución de la huerta periurbana en Tarragona",
+    "news-5-parrafo": "La distancia entre el campo y la mesa se reduce drásticamente gracias a la huerta periurbana de Tarragona. Pequeños agricultores están eliminando intermediarios y conectando directamente con los vecinos a través de redes sociales, ofreciendo productos frescos de temporada y garantizando un precio justo por su trabajo."
+  },
   "productos": {
     "titulo": "Productos",
     "subtitulo": "Tu aliado digital para un estilo de vida saludable y sostenible",
